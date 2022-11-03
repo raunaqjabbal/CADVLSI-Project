@@ -1,0 +1,1364 @@
+
+
+================================================================
+== Vivado HLS Report for 'hand_num_nn'
+================================================================
+* Date:           Thu Nov  3 15:10:25 2022
+
+* Version:        2018.1 (Build 2188600 on Wed Apr 04 19:04:02 MDT 2018)
+* Project:        CADVLSI
+* Solution:       solution1
+* Product family: aartix7
+* Target device:  xa7a12tcsg325-1q
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      8.45|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +------+------+------+------+---------+
+    |   Latency   |   Interval  | Pipeline|
+    |  min |  max |  min |  max |   Type  |
+    +------+------+------+------+---------+
+    |  6949|  6949|  6949|  6949|   none  |
+    +------+------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------+------+------+----------+-----------+-----------+------+----------+
+        |             |   Latency   | Iteration|  Initiation Interval  | Trip |          |
+        |  Loop Name  |  min |  max |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------+------+------+----------+-----------+-----------+------+----------+
+        |- Loop 1     |  1305|  1305|        87|          -|          -|    15|    no    |
+        | + Loop 1.1  |    77|    77|        11|          -|          -|     7|    no    |
+        |- Loop 2     |  5250|  5250|       175|          -|          -|    30|    no    |
+        | + Loop 2.1  |   165|   165|        11|          -|          -|    15|    no    |
+        |- Loop 3     |   330|   330|        11|          -|          -|    30|    no    |
+        +-------------+------+------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 113
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / (!exitcond4)
+	22  / (exitcond4)
+3 --> 
+	4  / (!exitcond3)
+	14  / (exitcond3)
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	9  / true
+9 --> 
+	10  / true
+10 --> 
+	11  / true
+11 --> 
+	12  / true
+12 --> 
+	13  / true
+13 --> 
+	3  / true
+14 --> 
+	15  / true
+15 --> 
+	16  / true
+16 --> 
+	17  / true
+17 --> 
+	18  / true
+18 --> 
+	19  / true
+19 --> 
+	20  / true
+20 --> 
+	21  / true
+21 --> 
+	2  / true
+22 --> 
+	23  / (!exitcond2)
+	42  / (exitcond2)
+23 --> 
+	24  / (!exitcond1)
+	34  / (exitcond1)
+24 --> 
+	25  / true
+25 --> 
+	26  / true
+26 --> 
+	27  / true
+27 --> 
+	28  / true
+28 --> 
+	29  / true
+29 --> 
+	30  / true
+30 --> 
+	31  / true
+31 --> 
+	32  / true
+32 --> 
+	33  / true
+33 --> 
+	23  / true
+34 --> 
+	35  / true
+35 --> 
+	36  / true
+36 --> 
+	37  / true
+37 --> 
+	38  / true
+38 --> 
+	39  / true
+39 --> 
+	40  / true
+40 --> 
+	41  / true
+41 --> 
+	22  / true
+42 --> 
+	43  / (!exitcond)
+	53  / (exitcond)
+43 --> 
+	44  / true
+44 --> 
+	45  / true
+45 --> 
+	46  / true
+46 --> 
+	47  / true
+47 --> 
+	48  / true
+48 --> 
+	49  / true
+49 --> 
+	50  / true
+50 --> 
+	51  / true
+51 --> 
+	52  / true
+52 --> 
+	42  / true
+53 --> 
+	54  / true
+54 --> 
+	55  / true
+55 --> 
+	56  / true
+56 --> 
+	57  / true
+57 --> 
+	58  / true
+58 --> 
+	59  / true
+59 --> 
+	60  / true
+60 --> 
+	61  / true
+61 --> 
+	62  / true
+62 --> 
+	63  / true
+63 --> 
+	64  / true
+64 --> 
+	65  / true
+65 --> 
+	66  / true
+66 --> 
+	67  / true
+67 --> 
+	68  / true
+68 --> 
+	69  / true
+69 --> 
+	70  / true
+70 --> 
+	71  / true
+71 --> 
+	72  / true
+72 --> 
+	73  / true
+73 --> 
+	74  / true
+74 --> 
+	75  / true
+75 --> 
+	76  / true
+76 --> 
+	77  / true
+77 --> 
+	78  / true
+78 --> 
+	79  / true
+79 --> 
+	80  / true
+80 --> 
+	81  / true
+81 --> 
+	82  / true
+82 --> 
+	83  / true
+83 --> 
+	84  / true
+84 --> 
+	85  / true
+85 --> 
+	86  / true
+86 --> 
+	87  / true
+87 --> 
+	88  / true
+88 --> 
+	89  / true
+89 --> 
+	90  / true
+90 --> 
+	91  / true
+91 --> 
+	92  / true
+92 --> 
+	93  / true
+93 --> 
+	94  / true
+94 --> 
+	95  / true
+95 --> 
+	96  / true
+96 --> 
+	97  / true
+97 --> 
+	98  / true
+98 --> 
+	99  / true
+99 --> 
+	100  / true
+100 --> 
+	101  / true
+101 --> 
+	102  / true
+102 --> 
+	103  / true
+103 --> 
+	104  / true
+104 --> 
+	105  / true
+105 --> 
+	106  / true
+106 --> 
+	107  / true
+107 --> 
+	108  / true
+108 --> 
+	109  / true
+109 --> 
+	110  / true
+110 --> 
+	111  / true
+111 --> 
+	112  / true
+112 --> 
+	113  / true
+113 --> 
+
+* FSM state operations: 
+
+ <State 1> : 1.66ns
+ST_1 : Operation 114 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([7 x float]* %X) nounwind, !map !20"
+ST_1 : Operation 115 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %y) nounwind, !map !26"
+ST_1 : Operation 116 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float 0.000000e+00) nounwind, !map !32"
+ST_1 : Operation 117 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([12 x i8]* @hand_num_nn_str) nounwind"
+ST_1 : Operation 118 [1/1] (0.00ns)   --->   "%h1 = alloca [15 x float], align 16" [core.cpp:25]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 30> <RAM>
+ST_1 : Operation 119 [1/1] (0.00ns)   --->   "%h2 = alloca [30 x float], align 16" [core.cpp:45]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 30> <RAM>
+ST_1 : Operation 120 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 0, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [9 x i8]* @p_str2, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [core.cpp:11]
+ST_1 : Operation 121 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 %y, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [9 x i8]* @p_str2, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [core.cpp:12]
+ST_1 : Operation 122 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface([7 x float]* %X, [5 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind"
+ST_1 : Operation 123 [1/1] (1.66ns)   --->   "br label %1" [core.cpp:53]
+
+ <State 2> : 1.78ns
+ST_2 : Operation 124 [1/1] (0.00ns)   --->   "%i = phi i4 [ 0, %0 ], [ %i_3, %._crit_edge ]"
+ST_2 : Operation 125 [1/1] (1.44ns)   --->   "%exitcond4 = icmp eq i4 %i, -1" [core.cpp:53]   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 126 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 15, i64 15, i64 15) nounwind"
+ST_2 : Operation 127 [1/1] (1.77ns)   --->   "%i_3 = add i4 %i, 1" [core.cpp:53]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.86> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 128 [1/1] (0.00ns)   --->   "br i1 %exitcond4, label %.preheader5.preheader, label %2" [core.cpp:53]
+ST_2 : Operation 129 [1/1] (0.00ns)   --->   "%tmp = zext i4 %i to i64" [core.cpp:54]
+ST_2 : Operation 130 [1/1] (0.00ns)   --->   "%tmp_cast = zext i4 %i to i8" [core.cpp:54]
+ST_2 : Operation 131 [1/1] (0.00ns)   --->   "%h1_addr = getelementptr inbounds [15 x float]* %h1, i64 0, i64 %tmp" [core.cpp:54]
+ST_2 : Operation 132 [1/1] (1.66ns)   --->   "br label %3" [core.cpp:55]
+ST_2 : Operation 133 [1/1] (1.66ns)   --->   "br label %.preheader5" [core.cpp:63]
+
+ <State 3> : 6.94ns
+ST_3 : Operation 134 [1/1] (0.00ns)   --->   "%tmp_1 = phi float [ 0.000000e+00, %2 ], [ %tmp_7, %4 ]" [core.cpp:56]
+ST_3 : Operation 135 [1/1] (0.00ns)   --->   "%j = phi i3 [ 0, %2 ], [ %j_2, %4 ]"
+ST_3 : Operation 136 [1/1] (1.18ns)   --->   "%exitcond3 = icmp eq i3 %j, -1" [core.cpp:55]   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 137 [1/1] (0.00ns)   --->   "%empty_5 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 7, i64 7, i64 7) nounwind"
+ST_3 : Operation 138 [1/1] (1.68ns)   --->   "%j_2 = add i3 %j, 1" [core.cpp:55]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.86> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 139 [1/1] (0.00ns)   --->   "br i1 %exitcond3, label %._crit_edge, label %4" [core.cpp:55]
+ST_3 : Operation 140 [1/1] (0.00ns)   --->   "%tmp_5_cast = zext i3 %j to i8" [core.cpp:55]
+ST_3 : Operation 141 [1/1] (0.00ns)   --->   "%tmp_24 = call i7 @_ssdm_op_BitConcatenate.i7.i3.i4(i3 %j, i4 0)" [core.cpp:55]
+ST_3 : Operation 142 [1/1] (0.00ns)   --->   "%p_shl_cast = zext i7 %tmp_24 to i8" [core.cpp:56]
+ST_3 : Operation 143 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%tmp_28 = sub i8 %p_shl_cast, %tmp_5_cast" [core.cpp:56]   --->   Core 80 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.88> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_3 : Operation 144 [1/1] (3.67ns) (root node of TernaryAdder)   --->   "%tmp_29 = add i8 %tmp_28, %tmp_cast" [core.cpp:56]   --->   Core 80 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.88> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_3 : Operation 145 [1/1] (0.00ns)   --->   "%tmp_30_cast = sext i8 %tmp_29 to i64" [core.cpp:56]
+ST_3 : Operation 146 [1/1] (0.00ns)   --->   "%theta1h1_addr = getelementptr [105 x float]* @theta1h1, i64 0, i64 %tmp_30_cast" [core.cpp:56]
+ST_3 : Operation 147 [2/2] (3.25ns)   --->   "%theta1h1_load = load float* %theta1h1_addr, align 4" [core.cpp:56]   --->   Core 48 'ROM_nP' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 32> <Depth = 30> <ROM>
+ST_3 : Operation 148 [1/1] (0.00ns)   --->   "%theta1b2_addr = getelementptr inbounds [15 x float]* @theta1b2, i64 0, i64 %tmp" [core.cpp:58]
+ST_3 : Operation 149 [2/2] (3.25ns)   --->   "%theta1b2_load = load float* %theta1b2_addr, align 4" [core.cpp:58]   --->   Core 48 'ROM_nP' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 32> <Depth = 30> <ROM>
+
+ <State 4> : 3.26ns
+ST_4 : Operation 150 [1/1] (0.00ns)   --->   "%tmp_5 = zext i3 %j to i64" [core.cpp:56]
+ST_4 : Operation 151 [1/1] (0.00ns)   --->   "%X_addr = getelementptr [7 x float]* %X, i64 0, i64 %tmp_5" [core.cpp:56]
+ST_4 : Operation 152 [2/2] (2.15ns)   --->   "%X_load = load float* %X_addr, align 4" [core.cpp:56]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 30> <RAM>
+ST_4 : Operation 153 [1/2] (3.25ns)   --->   "%theta1h1_load = load float* %theta1h1_addr, align 4" [core.cpp:56]   --->   Core 48 'ROM_nP' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 32> <Depth = 30> <ROM>
+
+ <State 5> : 7.80ns
+ST_5 : Operation 154 [1/2] (2.15ns)   --->   "%X_load = load float* %X_addr, align 4" [core.cpp:56]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 30> <RAM>
+ST_5 : Operation 155 [4/4] (5.64ns)   --->   "%tmp_6 = fmul float %X_load, %theta1h1_load" [core.cpp:56]   --->   Core 100 'FMul' <Latency = 3> <II = 1> <Delay = 5.64> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+ <State 6> : 5.64ns
+ST_6 : Operation 156 [3/4] (5.64ns)   --->   "%tmp_6 = fmul float %X_load, %theta1h1_load" [core.cpp:56]   --->   Core 100 'FMul' <Latency = 3> <II = 1> <Delay = 5.64> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+ <State 7> : 5.64ns
+ST_7 : Operation 157 [2/4] (5.64ns)   --->   "%tmp_6 = fmul float %X_load, %theta1h1_load" [core.cpp:56]   --->   Core 100 'FMul' <Latency = 3> <II = 1> <Delay = 5.64> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+ <State 8> : 5.64ns
+ST_8 : Operation 158 [1/4] (5.64ns)   --->   "%tmp_6 = fmul float %X_load, %theta1h1_load" [core.cpp:56]   --->   Core 100 'FMul' <Latency = 3> <II = 1> <Delay = 5.64> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+ <State 9> : 7.18ns
+ST_9 : Operation 159 [5/5] (7.17ns)   --->   "%tmp_7 = fadd float %tmp_1, %tmp_6" [core.cpp:56]   --->   Core 99 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.17> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+ <State 10> : 7.18ns
+ST_10 : Operation 160 [4/5] (7.17ns)   --->   "%tmp_7 = fadd float %tmp_1, %tmp_6" [core.cpp:56]   --->   Core 99 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.17> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+ <State 11> : 7.18ns
+ST_11 : Operation 161 [3/5] (7.17ns)   --->   "%tmp_7 = fadd float %tmp_1, %tmp_6" [core.cpp:56]   --->   Core 99 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.17> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+ <State 12> : 7.18ns
+ST_12 : Operation 162 [2/5] (7.17ns)   --->   "%tmp_7 = fadd float %tmp_1, %tmp_6" [core.cpp:56]   --->   Core 99 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.17> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+ <State 13> : 7.18ns
+ST_13 : Operation 163 [1/5] (7.17ns)   --->   "%tmp_7 = fadd float %tmp_1, %tmp_6" [core.cpp:56]   --->   Core 99 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.17> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 164 [1/1] (0.00ns)   --->   "br label %3" [core.cpp:55]
+
+ <State 14> : 3.26ns
+ST_14 : Operation 165 [1/2] (3.25ns)   --->   "%theta1b2_load = load float* %theta1b2_addr, align 4" [core.cpp:58]   --->   Core 48 'ROM_nP' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 32> <Depth = 30> <ROM>
+
+ <State 15> : 7.18ns
+ST_15 : Operation 166 [5/5] (7.17ns)   --->   "%tmp_3 = fadd float %tmp_1, %theta1b2_load" [core.cpp:58]   --->   Core 99 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.17> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+ <State 16> : 7.18ns
+ST_16 : Operation 167 [4/5] (7.17ns)   --->   "%tmp_3 = fadd float %tmp_1, %theta1b2_load" [core.cpp:58]   --->   Core 99 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.17> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+ <State 17> : 7.18ns
+ST_17 : Operation 168 [3/5] (7.17ns)   --->   "%tmp_3 = fadd float %tmp_1, %theta1b2_load" [core.cpp:58]   --->   Core 99 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.17> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+ <State 18> : 7.18ns
+ST_18 : Operation 169 [2/5] (7.17ns)   --->   "%tmp_3 = fadd float %tmp_1, %theta1b2_load" [core.cpp:58]   --->   Core 99 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.17> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+ <State 19> : 7.18ns
+ST_19 : Operation 170 [1/5] (7.17ns)   --->   "%tmp_3 = fadd float %tmp_1, %theta1b2_load" [core.cpp:58]   --->   Core 99 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.17> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+ <State 20> : 6.62ns
+ST_20 : Operation 171 [1/1] (6.61ns)   --->   "%tmp_21 = fcmp olt float %tmp_3, 0.000000e+00" [core.cpp:59]   --->   Core 105 'FCmp' <Latency = 0> <II = 1> <Delay = 6.61> <FuncUnit> <Opcode : 'fcmp'> <InPorts = 2> <OutPorts = 1>
+
+ <State 21> : 5.93ns
+ST_21 : Operation 172 [1/1] (0.00ns)   --->   "%tmp_3_to_int = bitcast float %tmp_3 to i32" [core.cpp:58]
+ST_21 : Operation 173 [1/1] (0.00ns)   --->   "%tmp_4 = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %tmp_3_to_int, i32 23, i32 30)" [core.cpp:58]
+ST_21 : Operation 174 [1/1] (0.00ns)   --->   "%tmp_16 = trunc i32 %tmp_3_to_int to i23" [core.cpp:58]
+ST_21 : Operation 175 [1/1] (1.47ns)   --->   "%notlhs = icmp ne i8 %tmp_4, -1" [core.cpp:58]   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_21 : Operation 176 [1/1] (2.40ns)   --->   "%notrhs = icmp eq i23 %tmp_16, 0" [core.cpp:58]   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_21 : Operation 177 [1/1] (0.00ns) (grouped into LUT with out node storemerge)   --->   "%tmp_20 = or i1 %notrhs, %notlhs" [core.cpp:58]   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 1.26> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_21 : Operation 178 [1/1] (0.00ns) (grouped into LUT with out node storemerge)   --->   "%tmp_22 = and i1 %tmp_20, %tmp_21" [core.cpp:59]   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 1.26> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_21 : Operation 179 [1/1] (1.37ns) (out node of the LUT)   --->   "%storemerge = select i1 %tmp_22, float 0.000000e+00, float %tmp_3" [core.cpp:59]   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.37> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_21 : Operation 180 [1/1] (2.15ns)   --->   "store float %storemerge, float* %h1_addr, align 4" [core.cpp:58]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 30> <RAM>
+ST_21 : Operation 181 [1/1] (0.00ns)   --->   "br label %1" [core.cpp:53]
+
+ <State 22> : 1.86ns
+ST_22 : Operation 182 [1/1] (0.00ns)   --->   "%i_1 = phi i5 [ %i_5, %._crit_edge6 ], [ 0, %.preheader5.preheader ]"
+ST_22 : Operation 183 [1/1] (1.44ns)   --->   "%exitcond2 = icmp eq i5 %i_1, -2" [core.cpp:63]   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_22 : Operation 184 [1/1] (0.00ns)   --->   "%empty_6 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 30, i64 30, i64 30) nounwind"
+ST_22 : Operation 185 [1/1] (1.86ns)   --->   "%i_5 = add i5 %i_1, 1" [core.cpp:63]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.86> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_22 : Operation 186 [1/1] (0.00ns)   --->   "br i1 %exitcond2, label %.preheader.preheader, label %5" [core.cpp:63]
+ST_22 : Operation 187 [1/1] (0.00ns)   --->   "%tmp_2 = zext i5 %i_1 to i64" [core.cpp:64]
+ST_22 : Operation 188 [1/1] (0.00ns)   --->   "%tmp_2_cast = zext i5 %i_1 to i10" [core.cpp:64]
+ST_22 : Operation 189 [1/1] (0.00ns)   --->   "%h2_addr = getelementptr inbounds [30 x float]* %h2, i64 0, i64 %tmp_2" [core.cpp:64]
+ST_22 : Operation 190 [1/1] (1.66ns)   --->   "br label %6" [core.cpp:65]
+ST_22 : Operation 191 [1/1] (1.66ns)   --->   "br label %.preheader" [core.cpp:73]
+
+ <State 23> : 7.02ns
+ST_23 : Operation 192 [1/1] (0.00ns)   --->   "%tmp_9 = phi float [ 0.000000e+00, %5 ], [ %tmp_19, %7 ]" [core.cpp:66]
+ST_23 : Operation 193 [1/1] (0.00ns)   --->   "%j_1 = phi i4 [ 0, %5 ], [ %j_3, %7 ]"
+ST_23 : Operation 194 [1/1] (1.44ns)   --->   "%exitcond1 = icmp eq i4 %j_1, -1" [core.cpp:65]   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_23 : Operation 195 [1/1] (0.00ns)   --->   "%empty_7 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 15, i64 15, i64 15) nounwind"
+ST_23 : Operation 196 [1/1] (1.77ns)   --->   "%j_3 = add i4 %j_1, 1" [core.cpp:65]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.86> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_23 : Operation 197 [1/1] (0.00ns)   --->   "br i1 %exitcond1, label %._crit_edge6, label %7" [core.cpp:65]
+ST_23 : Operation 198 [1/1] (0.00ns)   --->   "%tmp_31 = call i9 @_ssdm_op_BitConcatenate.i9.i4.i5(i4 %j_1, i5 0)" [core.cpp:65]
+ST_23 : Operation 199 [1/1] (0.00ns)   --->   "%p_shl1_cast = zext i9 %tmp_31 to i10" [core.cpp:65]
+ST_23 : Operation 200 [1/1] (0.00ns)   --->   "%tmp_32 = call i5 @_ssdm_op_BitConcatenate.i5.i4.i1(i4 %j_1, i1 false)" [core.cpp:65]
+ST_23 : Operation 201 [1/1] (0.00ns)   --->   "%p_shl2_cast = zext i5 %tmp_32 to i10" [core.cpp:66]
+ST_23 : Operation 202 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%tmp_33 = sub i10 %p_shl1_cast, %p_shl2_cast" [core.cpp:66]   --->   Core 80 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.88> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_23 : Operation 203 [1/1] (3.76ns) (root node of TernaryAdder)   --->   "%tmp_34 = add i10 %tmp_33, %tmp_2_cast" [core.cpp:66]   --->   Core 80 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.88> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_23 : Operation 204 [1/1] (0.00ns)   --->   "%tmp_34_cast = sext i10 %tmp_34 to i64" [core.cpp:66]
+ST_23 : Operation 205 [1/1] (0.00ns)   --->   "%theta2h3_addr = getelementptr [450 x float]* @theta2h3, i64 0, i64 %tmp_34_cast" [core.cpp:66]
+ST_23 : Operation 206 [2/2] (3.25ns)   --->   "%theta2h3_load = load float* %theta2h3_addr, align 4" [core.cpp:66]   --->   Core 48 'ROM_nP' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 32> <Depth = 30> <ROM>
+ST_23 : Operation 207 [1/1] (0.00ns)   --->   "%theta2b4_addr = getelementptr inbounds [30 x float]* @theta2b4, i64 0, i64 %tmp_2" [core.cpp:68]
+ST_23 : Operation 208 [2/2] (3.25ns)   --->   "%theta2b4_load = load float* %theta2b4_addr, align 4" [core.cpp:68]   --->   Core 48 'ROM_nP' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 32> <Depth = 30> <ROM>
+
+ <State 24> : 3.26ns
+ST_24 : Operation 209 [1/1] (0.00ns)   --->   "%tmp_17 = zext i4 %j_1 to i64" [core.cpp:66]
+ST_24 : Operation 210 [1/1] (0.00ns)   --->   "%h1_addr_1 = getelementptr inbounds [15 x float]* %h1, i64 0, i64 %tmp_17" [core.cpp:66]
+ST_24 : Operation 211 [2/2] (2.15ns)   --->   "%h1_load = load float* %h1_addr_1, align 4" [core.cpp:66]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 30> <RAM>
+ST_24 : Operation 212 [1/2] (3.25ns)   --->   "%theta2h3_load = load float* %theta2h3_addr, align 4" [core.cpp:66]   --->   Core 48 'ROM_nP' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 32> <Depth = 30> <ROM>
+
+ <State 25> : 7.80ns
+ST_25 : Operation 213 [1/2] (2.15ns)   --->   "%h1_load = load float* %h1_addr_1, align 4" [core.cpp:66]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 30> <RAM>
+ST_25 : Operation 214 [4/4] (5.64ns)   --->   "%tmp_18 = fmul float %h1_load, %theta2h3_load" [core.cpp:66]   --->   Core 100 'FMul' <Latency = 3> <II = 1> <Delay = 5.64> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+ <State 26> : 5.64ns
+ST_26 : Operation 215 [3/4] (5.64ns)   --->   "%tmp_18 = fmul float %h1_load, %theta2h3_load" [core.cpp:66]   --->   Core 100 'FMul' <Latency = 3> <II = 1> <Delay = 5.64> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+ <State 27> : 5.64ns
+ST_27 : Operation 216 [2/4] (5.64ns)   --->   "%tmp_18 = fmul float %h1_load, %theta2h3_load" [core.cpp:66]   --->   Core 100 'FMul' <Latency = 3> <II = 1> <Delay = 5.64> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+ <State 28> : 5.64ns
+ST_28 : Operation 217 [1/4] (5.64ns)   --->   "%tmp_18 = fmul float %h1_load, %theta2h3_load" [core.cpp:66]   --->   Core 100 'FMul' <Latency = 3> <II = 1> <Delay = 5.64> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+ <State 29> : 7.18ns
+ST_29 : Operation 218 [5/5] (7.17ns)   --->   "%tmp_19 = fadd float %tmp_9, %tmp_18" [core.cpp:66]   --->   Core 99 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.17> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+ <State 30> : 7.18ns
+ST_30 : Operation 219 [4/5] (7.17ns)   --->   "%tmp_19 = fadd float %tmp_9, %tmp_18" [core.cpp:66]   --->   Core 99 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.17> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+ <State 31> : 7.18ns
+ST_31 : Operation 220 [3/5] (7.17ns)   --->   "%tmp_19 = fadd float %tmp_9, %tmp_18" [core.cpp:66]   --->   Core 99 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.17> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+ <State 32> : 7.18ns
+ST_32 : Operation 221 [2/5] (7.17ns)   --->   "%tmp_19 = fadd float %tmp_9, %tmp_18" [core.cpp:66]   --->   Core 99 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.17> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+ <State 33> : 7.18ns
+ST_33 : Operation 222 [1/5] (7.17ns)   --->   "%tmp_19 = fadd float %tmp_9, %tmp_18" [core.cpp:66]   --->   Core 99 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.17> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_33 : Operation 223 [1/1] (0.00ns)   --->   "br label %6" [core.cpp:65]
+
+ <State 34> : 3.26ns
+ST_34 : Operation 224 [1/2] (3.25ns)   --->   "%theta2b4_load = load float* %theta2b4_addr, align 4" [core.cpp:68]   --->   Core 48 'ROM_nP' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 32> <Depth = 30> <ROM>
+
+ <State 35> : 7.18ns
+ST_35 : Operation 225 [5/5] (7.17ns)   --->   "%tmp_15 = fadd float %tmp_9, %theta2b4_load" [core.cpp:68]   --->   Core 99 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.17> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+ <State 36> : 7.18ns
+ST_36 : Operation 226 [4/5] (7.17ns)   --->   "%tmp_15 = fadd float %tmp_9, %theta2b4_load" [core.cpp:68]   --->   Core 99 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.17> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+ <State 37> : 7.18ns
+ST_37 : Operation 227 [3/5] (7.17ns)   --->   "%tmp_15 = fadd float %tmp_9, %theta2b4_load" [core.cpp:68]   --->   Core 99 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.17> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+ <State 38> : 7.18ns
+ST_38 : Operation 228 [2/5] (7.17ns)   --->   "%tmp_15 = fadd float %tmp_9, %theta2b4_load" [core.cpp:68]   --->   Core 99 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.17> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+ <State 39> : 7.18ns
+ST_39 : Operation 229 [1/5] (7.17ns)   --->   "%tmp_15 = fadd float %tmp_9, %theta2b4_load" [core.cpp:68]   --->   Core 99 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.17> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+ <State 40> : 6.62ns
+ST_40 : Operation 230 [1/1] (6.61ns)   --->   "%tmp_26 = fcmp olt float %tmp_15, 0.000000e+00" [core.cpp:69]   --->   Core 105 'FCmp' <Latency = 0> <II = 1> <Delay = 6.61> <FuncUnit> <Opcode : 'fcmp'> <InPorts = 2> <OutPorts = 1>
+
+ <State 41> : 5.93ns
+ST_41 : Operation 231 [1/1] (0.00ns)   --->   "%tmp_15_to_int = bitcast float %tmp_15 to i32" [core.cpp:68]
+ST_41 : Operation 232 [1/1] (0.00ns)   --->   "%tmp_23 = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %tmp_15_to_int, i32 23, i32 30)" [core.cpp:68]
+ST_41 : Operation 233 [1/1] (0.00ns)   --->   "%tmp_30 = trunc i32 %tmp_15_to_int to i23" [core.cpp:68]
+ST_41 : Operation 234 [1/1] (1.47ns)   --->   "%notlhs7 = icmp ne i8 %tmp_23, -1" [core.cpp:68]   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_41 : Operation 235 [1/1] (2.40ns)   --->   "%notrhs8 = icmp eq i23 %tmp_30, 0" [core.cpp:68]   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_41 : Operation 236 [1/1] (0.00ns) (grouped into LUT with out node storemerge2)   --->   "%tmp_25 = or i1 %notrhs8, %notlhs7" [core.cpp:68]   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 1.26> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_41 : Operation 237 [1/1] (0.00ns) (grouped into LUT with out node storemerge2)   --->   "%tmp_27 = and i1 %tmp_25, %tmp_26" [core.cpp:69]   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 1.26> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_41 : Operation 238 [1/1] (1.37ns) (out node of the LUT)   --->   "%storemerge2 = select i1 %tmp_27, float 0.000000e+00, float %tmp_15" [core.cpp:69]   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.37> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_41 : Operation 239 [1/1] (2.15ns)   --->   "store float %storemerge2, float* %h2_addr, align 4" [core.cpp:68]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 30> <RAM>
+ST_41 : Operation 240 [1/1] (0.00ns)   --->   "br label %.preheader5" [core.cpp:63]
+
+ <State 42> : 7.18ns
+ST_42 : Operation 241 [1/1] (0.00ns)   --->   "%h3 = phi float [ %h3_3, %8 ], [ 0.000000e+00, %.preheader.preheader ]"
+ST_42 : Operation 242 [1/1] (0.00ns)   --->   "%i_2 = phi i5 [ %i_4, %8 ], [ 0, %.preheader.preheader ]"
+ST_42 : Operation 243 [1/1] (1.44ns)   --->   "%exitcond = icmp eq i5 %i_2, -2" [core.cpp:73]   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_42 : Operation 244 [1/1] (0.00ns)   --->   "%empty_8 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 30, i64 30, i64 30) nounwind"
+ST_42 : Operation 245 [1/1] (1.86ns)   --->   "%i_4 = add i5 %i_2, 1" [core.cpp:73]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.86> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_42 : Operation 246 [1/1] (0.00ns)   --->   "br i1 %exitcond, label %9, label %8" [core.cpp:73]
+ST_42 : Operation 247 [1/1] (0.00ns)   --->   "%tmp_13 = zext i5 %i_2 to i64" [core.cpp:74]
+ST_42 : Operation 248 [1/1] (0.00ns)   --->   "%h2_addr_1 = getelementptr inbounds [30 x float]* %h2, i64 0, i64 %tmp_13" [core.cpp:74]
+ST_42 : Operation 249 [2/2] (2.15ns)   --->   "%h2_load = load float* %h2_addr_1, align 4" [core.cpp:74]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 30> <RAM>
+ST_42 : Operation 250 [1/1] (0.00ns)   --->   "%theta3h5_addr = getelementptr inbounds [30 x float]* @theta3h5, i64 0, i64 %tmp_13" [core.cpp:74]
+ST_42 : Operation 251 [2/2] (3.25ns)   --->   "%theta3h5_load = load float* %theta3h5_addr, align 4" [core.cpp:74]   --->   Core 48 'ROM_nP' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 32> <Depth = 30> <ROM>
+ST_42 : Operation 252 [5/5] (7.17ns)   --->   "%h3_1 = fadd float %h3, 0xBFD8AC2840000000" [core.cpp:76]   --->   Core 99 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.17> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+ <State 43> : 3.26ns
+ST_43 : Operation 253 [1/2] (2.15ns)   --->   "%h2_load = load float* %h2_addr_1, align 4" [core.cpp:74]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 30> <RAM>
+ST_43 : Operation 254 [1/2] (3.25ns)   --->   "%theta3h5_load = load float* %theta3h5_addr, align 4" [core.cpp:74]   --->   Core 48 'ROM_nP' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 32> <Depth = 30> <ROM>
+
+ <State 44> : 5.64ns
+ST_44 : Operation 255 [4/4] (5.64ns)   --->   "%tmp_14 = fmul float %h2_load, %theta3h5_load" [core.cpp:74]   --->   Core 100 'FMul' <Latency = 3> <II = 1> <Delay = 5.64> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+ <State 45> : 5.64ns
+ST_45 : Operation 256 [3/4] (5.64ns)   --->   "%tmp_14 = fmul float %h2_load, %theta3h5_load" [core.cpp:74]   --->   Core 100 'FMul' <Latency = 3> <II = 1> <Delay = 5.64> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+ <State 46> : 5.64ns
+ST_46 : Operation 257 [2/4] (5.64ns)   --->   "%tmp_14 = fmul float %h2_load, %theta3h5_load" [core.cpp:74]   --->   Core 100 'FMul' <Latency = 3> <II = 1> <Delay = 5.64> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+ <State 47> : 5.64ns
+ST_47 : Operation 258 [1/4] (5.64ns)   --->   "%tmp_14 = fmul float %h2_load, %theta3h5_load" [core.cpp:74]   --->   Core 100 'FMul' <Latency = 3> <II = 1> <Delay = 5.64> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+ <State 48> : 7.18ns
+ST_48 : Operation 259 [5/5] (7.17ns)   --->   "%h3_3 = fadd float %h3, %tmp_14" [core.cpp:74]   --->   Core 99 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.17> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+ <State 49> : 7.18ns
+ST_49 : Operation 260 [4/5] (7.17ns)   --->   "%h3_3 = fadd float %h3, %tmp_14" [core.cpp:74]   --->   Core 99 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.17> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+ <State 50> : 7.18ns
+ST_50 : Operation 261 [3/5] (7.17ns)   --->   "%h3_3 = fadd float %h3, %tmp_14" [core.cpp:74]   --->   Core 99 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.17> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+ <State 51> : 7.18ns
+ST_51 : Operation 262 [2/5] (7.17ns)   --->   "%h3_3 = fadd float %h3, %tmp_14" [core.cpp:74]   --->   Core 99 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.17> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+ <State 52> : 7.18ns
+ST_52 : Operation 263 [1/5] (7.17ns)   --->   "%h3_3 = fadd float %h3, %tmp_14" [core.cpp:74]   --->   Core 99 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.17> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_52 : Operation 264 [1/1] (0.00ns)   --->   "br label %.preheader" [core.cpp:73]
+
+ <State 53> : 7.18ns
+ST_53 : Operation 265 [4/5] (7.17ns)   --->   "%h3_1 = fadd float %h3, 0xBFD8AC2840000000" [core.cpp:76]   --->   Core 99 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.17> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+ <State 54> : 7.18ns
+ST_54 : Operation 266 [3/5] (7.17ns)   --->   "%h3_1 = fadd float %h3, 0xBFD8AC2840000000" [core.cpp:76]   --->   Core 99 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.17> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+ <State 55> : 7.18ns
+ST_55 : Operation 267 [2/5] (7.17ns)   --->   "%h3_1 = fadd float %h3, 0xBFD8AC2840000000" [core.cpp:76]   --->   Core 99 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.17> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+ <State 56> : 7.18ns
+ST_56 : Operation 268 [1/5] (7.17ns)   --->   "%h3_1 = fadd float %h3, 0xBFD8AC2840000000" [core.cpp:76]   --->   Core 99 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.17> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+ <State 57> : 6.62ns
+ST_57 : Operation 269 [1/1] (0.00ns)   --->   "%tmp_to_int = bitcast float %h3_1 to i32" [core.cpp:77]
+ST_57 : Operation 270 [1/1] (1.26ns)   --->   "%tmp_neg = xor i32 %tmp_to_int, -2147483648" [core.cpp:77]   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 1.26> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_57 : Operation 271 [1/1] (0.00ns)   --->   "%tmp_s = bitcast i32 %tmp_neg to float" [core.cpp:77]
+ST_57 : Operation 272 [1/1] (5.34ns)   --->   "%tmp_8 = fpext float %tmp_s to double" [core.cpp:77]   --->   Core 108 'Float2Double' <Latency = 0> <II = 1> <Delay = 5.34> <FuncUnit> <Opcode : 'fpext'> <InPorts = 1> <OutPorts = 1>
+
+ <State 58> : 7.32ns
+ST_58 : Operation 273 [18/18] (7.32ns)   --->   "%tmp_10 = call double @llvm.exp.f64(double %tmp_8)" [core.cpp:77]   --->   Core 122 'DExp' <Latency = 17> <II = 1> <Delay = 7.32> <FuncUnit> <Opcode : 'dexp'> <InPorts = 1> <OutPorts = 1>
+
+ <State 59> : 7.32ns
+ST_59 : Operation 274 [17/18] (7.32ns)   --->   "%tmp_10 = call double @llvm.exp.f64(double %tmp_8)" [core.cpp:77]   --->   Core 122 'DExp' <Latency = 17> <II = 1> <Delay = 7.32> <FuncUnit> <Opcode : 'dexp'> <InPorts = 1> <OutPorts = 1>
+
+ <State 60> : 7.32ns
+ST_60 : Operation 275 [16/18] (7.32ns)   --->   "%tmp_10 = call double @llvm.exp.f64(double %tmp_8)" [core.cpp:77]   --->   Core 122 'DExp' <Latency = 17> <II = 1> <Delay = 7.32> <FuncUnit> <Opcode : 'dexp'> <InPorts = 1> <OutPorts = 1>
+
+ <State 61> : 7.32ns
+ST_61 : Operation 276 [15/18] (7.32ns)   --->   "%tmp_10 = call double @llvm.exp.f64(double %tmp_8)" [core.cpp:77]   --->   Core 122 'DExp' <Latency = 17> <II = 1> <Delay = 7.32> <FuncUnit> <Opcode : 'dexp'> <InPorts = 1> <OutPorts = 1>
+
+ <State 62> : 7.32ns
+ST_62 : Operation 277 [14/18] (7.32ns)   --->   "%tmp_10 = call double @llvm.exp.f64(double %tmp_8)" [core.cpp:77]   --->   Core 122 'DExp' <Latency = 17> <II = 1> <Delay = 7.32> <FuncUnit> <Opcode : 'dexp'> <InPorts = 1> <OutPorts = 1>
+
+ <State 63> : 7.32ns
+ST_63 : Operation 278 [13/18] (7.32ns)   --->   "%tmp_10 = call double @llvm.exp.f64(double %tmp_8)" [core.cpp:77]   --->   Core 122 'DExp' <Latency = 17> <II = 1> <Delay = 7.32> <FuncUnit> <Opcode : 'dexp'> <InPorts = 1> <OutPorts = 1>
+
+ <State 64> : 7.32ns
+ST_64 : Operation 279 [12/18] (7.32ns)   --->   "%tmp_10 = call double @llvm.exp.f64(double %tmp_8)" [core.cpp:77]   --->   Core 122 'DExp' <Latency = 17> <II = 1> <Delay = 7.32> <FuncUnit> <Opcode : 'dexp'> <InPorts = 1> <OutPorts = 1>
+
+ <State 65> : 7.32ns
+ST_65 : Operation 280 [11/18] (7.32ns)   --->   "%tmp_10 = call double @llvm.exp.f64(double %tmp_8)" [core.cpp:77]   --->   Core 122 'DExp' <Latency = 17> <II = 1> <Delay = 7.32> <FuncUnit> <Opcode : 'dexp'> <InPorts = 1> <OutPorts = 1>
+
+ <State 66> : 7.32ns
+ST_66 : Operation 281 [10/18] (7.32ns)   --->   "%tmp_10 = call double @llvm.exp.f64(double %tmp_8)" [core.cpp:77]   --->   Core 122 'DExp' <Latency = 17> <II = 1> <Delay = 7.32> <FuncUnit> <Opcode : 'dexp'> <InPorts = 1> <OutPorts = 1>
+
+ <State 67> : 7.32ns
+ST_67 : Operation 282 [9/18] (7.32ns)   --->   "%tmp_10 = call double @llvm.exp.f64(double %tmp_8)" [core.cpp:77]   --->   Core 122 'DExp' <Latency = 17> <II = 1> <Delay = 7.32> <FuncUnit> <Opcode : 'dexp'> <InPorts = 1> <OutPorts = 1>
+
+ <State 68> : 7.32ns
+ST_68 : Operation 283 [8/18] (7.32ns)   --->   "%tmp_10 = call double @llvm.exp.f64(double %tmp_8)" [core.cpp:77]   --->   Core 122 'DExp' <Latency = 17> <II = 1> <Delay = 7.32> <FuncUnit> <Opcode : 'dexp'> <InPorts = 1> <OutPorts = 1>
+
+ <State 69> : 7.32ns
+ST_69 : Operation 284 [7/18] (7.32ns)   --->   "%tmp_10 = call double @llvm.exp.f64(double %tmp_8)" [core.cpp:77]   --->   Core 122 'DExp' <Latency = 17> <II = 1> <Delay = 7.32> <FuncUnit> <Opcode : 'dexp'> <InPorts = 1> <OutPorts = 1>
+
+ <State 70> : 7.32ns
+ST_70 : Operation 285 [6/18] (7.32ns)   --->   "%tmp_10 = call double @llvm.exp.f64(double %tmp_8)" [core.cpp:77]   --->   Core 122 'DExp' <Latency = 17> <II = 1> <Delay = 7.32> <FuncUnit> <Opcode : 'dexp'> <InPorts = 1> <OutPorts = 1>
+
+ <State 71> : 7.32ns
+ST_71 : Operation 286 [5/18] (7.32ns)   --->   "%tmp_10 = call double @llvm.exp.f64(double %tmp_8)" [core.cpp:77]   --->   Core 122 'DExp' <Latency = 17> <II = 1> <Delay = 7.32> <FuncUnit> <Opcode : 'dexp'> <InPorts = 1> <OutPorts = 1>
+
+ <State 72> : 7.32ns
+ST_72 : Operation 287 [4/18] (7.32ns)   --->   "%tmp_10 = call double @llvm.exp.f64(double %tmp_8)" [core.cpp:77]   --->   Core 122 'DExp' <Latency = 17> <II = 1> <Delay = 7.32> <FuncUnit> <Opcode : 'dexp'> <InPorts = 1> <OutPorts = 1>
+
+ <State 73> : 7.32ns
+ST_73 : Operation 288 [3/18] (7.32ns)   --->   "%tmp_10 = call double @llvm.exp.f64(double %tmp_8)" [core.cpp:77]   --->   Core 122 'DExp' <Latency = 17> <II = 1> <Delay = 7.32> <FuncUnit> <Opcode : 'dexp'> <InPorts = 1> <OutPorts = 1>
+
+ <State 74> : 7.32ns
+ST_74 : Operation 289 [2/18] (7.32ns)   --->   "%tmp_10 = call double @llvm.exp.f64(double %tmp_8)" [core.cpp:77]   --->   Core 122 'DExp' <Latency = 17> <II = 1> <Delay = 7.32> <FuncUnit> <Opcode : 'dexp'> <InPorts = 1> <OutPorts = 1>
+
+ <State 75> : 7.32ns
+ST_75 : Operation 290 [1/18] (7.32ns)   --->   "%tmp_10 = call double @llvm.exp.f64(double %tmp_8)" [core.cpp:77]   --->   Core 122 'DExp' <Latency = 17> <II = 1> <Delay = 7.32> <FuncUnit> <Opcode : 'dexp'> <InPorts = 1> <OutPorts = 1>
+
+ <State 76> : 8.37ns
+ST_76 : Operation 291 [6/6] (8.37ns)   --->   "%tmp_11 = fadd double %tmp_10, 1.000000e+00" [core.cpp:77]   --->   Core 109 'DAddSub' <Latency = 5> <II = 1> <Delay = 8.37> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+ <State 77> : 8.37ns
+ST_77 : Operation 292 [5/6] (8.37ns)   --->   "%tmp_11 = fadd double %tmp_10, 1.000000e+00" [core.cpp:77]   --->   Core 109 'DAddSub' <Latency = 5> <II = 1> <Delay = 8.37> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+ <State 78> : 8.37ns
+ST_78 : Operation 293 [4/6] (8.37ns)   --->   "%tmp_11 = fadd double %tmp_10, 1.000000e+00" [core.cpp:77]   --->   Core 109 'DAddSub' <Latency = 5> <II = 1> <Delay = 8.37> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+ <State 79> : 8.37ns
+ST_79 : Operation 294 [3/6] (8.37ns)   --->   "%tmp_11 = fadd double %tmp_10, 1.000000e+00" [core.cpp:77]   --->   Core 109 'DAddSub' <Latency = 5> <II = 1> <Delay = 8.37> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+ <State 80> : 8.37ns
+ST_80 : Operation 295 [2/6] (8.37ns)   --->   "%tmp_11 = fadd double %tmp_10, 1.000000e+00" [core.cpp:77]   --->   Core 109 'DAddSub' <Latency = 5> <II = 1> <Delay = 8.37> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+ <State 81> : 8.37ns
+ST_81 : Operation 296 [1/6] (8.37ns)   --->   "%tmp_11 = fadd double %tmp_10, 1.000000e+00" [core.cpp:77]   --->   Core 109 'DAddSub' <Latency = 5> <II = 1> <Delay = 8.37> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+ <State 82> : 8.45ns
+ST_82 : Operation 297 [31/31] (8.45ns)   --->   "%tmp_12 = fdiv double 1.000000e+00, %tmp_11" [core.cpp:77]   --->   Core 111 'DDiv' <Latency = 30> <II = 1> <Delay = 8.45> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 83> : 8.45ns
+ST_83 : Operation 298 [30/31] (8.45ns)   --->   "%tmp_12 = fdiv double 1.000000e+00, %tmp_11" [core.cpp:77]   --->   Core 111 'DDiv' <Latency = 30> <II = 1> <Delay = 8.45> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 84> : 8.45ns
+ST_84 : Operation 299 [29/31] (8.45ns)   --->   "%tmp_12 = fdiv double 1.000000e+00, %tmp_11" [core.cpp:77]   --->   Core 111 'DDiv' <Latency = 30> <II = 1> <Delay = 8.45> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 85> : 8.45ns
+ST_85 : Operation 300 [28/31] (8.45ns)   --->   "%tmp_12 = fdiv double 1.000000e+00, %tmp_11" [core.cpp:77]   --->   Core 111 'DDiv' <Latency = 30> <II = 1> <Delay = 8.45> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 86> : 8.45ns
+ST_86 : Operation 301 [27/31] (8.45ns)   --->   "%tmp_12 = fdiv double 1.000000e+00, %tmp_11" [core.cpp:77]   --->   Core 111 'DDiv' <Latency = 30> <II = 1> <Delay = 8.45> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 87> : 8.45ns
+ST_87 : Operation 302 [26/31] (8.45ns)   --->   "%tmp_12 = fdiv double 1.000000e+00, %tmp_11" [core.cpp:77]   --->   Core 111 'DDiv' <Latency = 30> <II = 1> <Delay = 8.45> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 88> : 8.45ns
+ST_88 : Operation 303 [25/31] (8.45ns)   --->   "%tmp_12 = fdiv double 1.000000e+00, %tmp_11" [core.cpp:77]   --->   Core 111 'DDiv' <Latency = 30> <II = 1> <Delay = 8.45> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 89> : 8.45ns
+ST_89 : Operation 304 [24/31] (8.45ns)   --->   "%tmp_12 = fdiv double 1.000000e+00, %tmp_11" [core.cpp:77]   --->   Core 111 'DDiv' <Latency = 30> <II = 1> <Delay = 8.45> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 90> : 8.45ns
+ST_90 : Operation 305 [23/31] (8.45ns)   --->   "%tmp_12 = fdiv double 1.000000e+00, %tmp_11" [core.cpp:77]   --->   Core 111 'DDiv' <Latency = 30> <II = 1> <Delay = 8.45> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 91> : 8.45ns
+ST_91 : Operation 306 [22/31] (8.45ns)   --->   "%tmp_12 = fdiv double 1.000000e+00, %tmp_11" [core.cpp:77]   --->   Core 111 'DDiv' <Latency = 30> <II = 1> <Delay = 8.45> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 92> : 8.45ns
+ST_92 : Operation 307 [21/31] (8.45ns)   --->   "%tmp_12 = fdiv double 1.000000e+00, %tmp_11" [core.cpp:77]   --->   Core 111 'DDiv' <Latency = 30> <II = 1> <Delay = 8.45> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 93> : 8.45ns
+ST_93 : Operation 308 [20/31] (8.45ns)   --->   "%tmp_12 = fdiv double 1.000000e+00, %tmp_11" [core.cpp:77]   --->   Core 111 'DDiv' <Latency = 30> <II = 1> <Delay = 8.45> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 94> : 8.45ns
+ST_94 : Operation 309 [19/31] (8.45ns)   --->   "%tmp_12 = fdiv double 1.000000e+00, %tmp_11" [core.cpp:77]   --->   Core 111 'DDiv' <Latency = 30> <II = 1> <Delay = 8.45> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 95> : 8.45ns
+ST_95 : Operation 310 [18/31] (8.45ns)   --->   "%tmp_12 = fdiv double 1.000000e+00, %tmp_11" [core.cpp:77]   --->   Core 111 'DDiv' <Latency = 30> <II = 1> <Delay = 8.45> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 96> : 8.45ns
+ST_96 : Operation 311 [17/31] (8.45ns)   --->   "%tmp_12 = fdiv double 1.000000e+00, %tmp_11" [core.cpp:77]   --->   Core 111 'DDiv' <Latency = 30> <II = 1> <Delay = 8.45> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 97> : 8.45ns
+ST_97 : Operation 312 [16/31] (8.45ns)   --->   "%tmp_12 = fdiv double 1.000000e+00, %tmp_11" [core.cpp:77]   --->   Core 111 'DDiv' <Latency = 30> <II = 1> <Delay = 8.45> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 98> : 8.45ns
+ST_98 : Operation 313 [15/31] (8.45ns)   --->   "%tmp_12 = fdiv double 1.000000e+00, %tmp_11" [core.cpp:77]   --->   Core 111 'DDiv' <Latency = 30> <II = 1> <Delay = 8.45> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 99> : 8.45ns
+ST_99 : Operation 314 [14/31] (8.45ns)   --->   "%tmp_12 = fdiv double 1.000000e+00, %tmp_11" [core.cpp:77]   --->   Core 111 'DDiv' <Latency = 30> <II = 1> <Delay = 8.45> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 100> : 8.45ns
+ST_100 : Operation 315 [13/31] (8.45ns)   --->   "%tmp_12 = fdiv double 1.000000e+00, %tmp_11" [core.cpp:77]   --->   Core 111 'DDiv' <Latency = 30> <II = 1> <Delay = 8.45> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 101> : 8.45ns
+ST_101 : Operation 316 [12/31] (8.45ns)   --->   "%tmp_12 = fdiv double 1.000000e+00, %tmp_11" [core.cpp:77]   --->   Core 111 'DDiv' <Latency = 30> <II = 1> <Delay = 8.45> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 102> : 8.45ns
+ST_102 : Operation 317 [11/31] (8.45ns)   --->   "%tmp_12 = fdiv double 1.000000e+00, %tmp_11" [core.cpp:77]   --->   Core 111 'DDiv' <Latency = 30> <II = 1> <Delay = 8.45> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 103> : 8.45ns
+ST_103 : Operation 318 [10/31] (8.45ns)   --->   "%tmp_12 = fdiv double 1.000000e+00, %tmp_11" [core.cpp:77]   --->   Core 111 'DDiv' <Latency = 30> <II = 1> <Delay = 8.45> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 104> : 8.45ns
+ST_104 : Operation 319 [9/31] (8.45ns)   --->   "%tmp_12 = fdiv double 1.000000e+00, %tmp_11" [core.cpp:77]   --->   Core 111 'DDiv' <Latency = 30> <II = 1> <Delay = 8.45> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 105> : 8.45ns
+ST_105 : Operation 320 [8/31] (8.45ns)   --->   "%tmp_12 = fdiv double 1.000000e+00, %tmp_11" [core.cpp:77]   --->   Core 111 'DDiv' <Latency = 30> <II = 1> <Delay = 8.45> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 106> : 8.45ns
+ST_106 : Operation 321 [7/31] (8.45ns)   --->   "%tmp_12 = fdiv double 1.000000e+00, %tmp_11" [core.cpp:77]   --->   Core 111 'DDiv' <Latency = 30> <II = 1> <Delay = 8.45> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 107> : 8.45ns
+ST_107 : Operation 322 [6/31] (8.45ns)   --->   "%tmp_12 = fdiv double 1.000000e+00, %tmp_11" [core.cpp:77]   --->   Core 111 'DDiv' <Latency = 30> <II = 1> <Delay = 8.45> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 108> : 8.45ns
+ST_108 : Operation 323 [5/31] (8.45ns)   --->   "%tmp_12 = fdiv double 1.000000e+00, %tmp_11" [core.cpp:77]   --->   Core 111 'DDiv' <Latency = 30> <II = 1> <Delay = 8.45> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 109> : 8.45ns
+ST_109 : Operation 324 [4/31] (8.45ns)   --->   "%tmp_12 = fdiv double 1.000000e+00, %tmp_11" [core.cpp:77]   --->   Core 111 'DDiv' <Latency = 30> <II = 1> <Delay = 8.45> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 110> : 8.45ns
+ST_110 : Operation 325 [3/31] (8.45ns)   --->   "%tmp_12 = fdiv double 1.000000e+00, %tmp_11" [core.cpp:77]   --->   Core 111 'DDiv' <Latency = 30> <II = 1> <Delay = 8.45> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 111> : 8.45ns
+ST_111 : Operation 326 [2/31] (8.45ns)   --->   "%tmp_12 = fdiv double 1.000000e+00, %tmp_11" [core.cpp:77]   --->   Core 111 'DDiv' <Latency = 30> <II = 1> <Delay = 8.45> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 112> : 8.45ns
+ST_112 : Operation 327 [1/31] (8.45ns)   --->   "%tmp_12 = fdiv double 1.000000e+00, %tmp_11" [core.cpp:77]   --->   Core 111 'DDiv' <Latency = 30> <II = 1> <Delay = 8.45> <FuncUnit> <Opcode : 'ddiv' 'drem'> <InPorts = 2> <OutPorts = 1>
+
+ <State 113> : 6.40ns
+ST_113 : Operation 328 [1/1] (6.40ns)   --->   "%h3_2 = fptrunc double %tmp_12 to float" [core.cpp:77]   --->   Core 117 'Double2Float' <Latency = 0> <II = 1> <Delay = 6.40> <FuncUnit> <Opcode : 'fptrunc'> <InPorts = 1> <OutPorts = 1>
+ST_113 : Operation 329 [1/1] (0.00ns)   --->   "ret float %h3_2" [core.cpp:80]
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 1.66ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('i') with incoming values : ('i', core.cpp:53) [19]  (1.66 ns)
+
+ <State 2>: 1.78ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', core.cpp:53) [19]  (0 ns)
+	'add' operation ('i', core.cpp:53) [22]  (1.78 ns)
+
+ <State 3>: 6.94ns
+The critical path consists of the following:
+	'phi' operation ('j') with incoming values : ('j', core.cpp:55) [31]  (0 ns)
+	'sub' operation ('tmp_28', core.cpp:56) [41]  (0 ns)
+	'add' operation ('tmp_29', core.cpp:56) [42]  (3.68 ns)
+	'getelementptr' operation ('theta1h1_addr', core.cpp:56) [44]  (0 ns)
+	'load' operation ('theta1h1_load', core.cpp:56) on array 'theta1h1' [47]  (3.26 ns)
+
+ <State 4>: 3.26ns
+The critical path consists of the following:
+	'load' operation ('theta1h1_load', core.cpp:56) on array 'theta1h1' [47]  (3.26 ns)
+
+ <State 5>: 7.8ns
+The critical path consists of the following:
+	'load' operation ('X_load', core.cpp:56) on array 'X' [46]  (2.15 ns)
+	'fmul' operation ('tmp_6', core.cpp:56) [48]  (5.64 ns)
+
+ <State 6>: 5.64ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_6', core.cpp:56) [48]  (5.64 ns)
+
+ <State 7>: 5.64ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_6', core.cpp:56) [48]  (5.64 ns)
+
+ <State 8>: 5.64ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_6', core.cpp:56) [48]  (5.64 ns)
+
+ <State 9>: 7.18ns
+The critical path consists of the following:
+	'fadd' operation ('tmp_7', core.cpp:56) [49]  (7.18 ns)
+
+ <State 10>: 7.18ns
+The critical path consists of the following:
+	'fadd' operation ('tmp_7', core.cpp:56) [49]  (7.18 ns)
+
+ <State 11>: 7.18ns
+The critical path consists of the following:
+	'fadd' operation ('tmp_7', core.cpp:56) [49]  (7.18 ns)
+
+ <State 12>: 7.18ns
+The critical path consists of the following:
+	'fadd' operation ('tmp_7', core.cpp:56) [49]  (7.18 ns)
+
+ <State 13>: 7.18ns
+The critical path consists of the following:
+	'fadd' operation ('tmp_7', core.cpp:56) [49]  (7.18 ns)
+
+ <State 14>: 3.26ns
+The critical path consists of the following:
+	'load' operation ('theta1b2_load', core.cpp:58) on array 'theta1b2' [53]  (3.26 ns)
+
+ <State 15>: 7.18ns
+The critical path consists of the following:
+	'fadd' operation ('tmp_3', core.cpp:58) [54]  (7.18 ns)
+
+ <State 16>: 7.18ns
+The critical path consists of the following:
+	'fadd' operation ('tmp_3', core.cpp:58) [54]  (7.18 ns)
+
+ <State 17>: 7.18ns
+The critical path consists of the following:
+	'fadd' operation ('tmp_3', core.cpp:58) [54]  (7.18 ns)
+
+ <State 18>: 7.18ns
+The critical path consists of the following:
+	'fadd' operation ('tmp_3', core.cpp:58) [54]  (7.18 ns)
+
+ <State 19>: 7.18ns
+The critical path consists of the following:
+	'fadd' operation ('tmp_3', core.cpp:58) [54]  (7.18 ns)
+
+ <State 20>: 6.62ns
+The critical path consists of the following:
+	'fcmp' operation ('tmp_21', core.cpp:59) [61]  (6.62 ns)
+
+ <State 21>: 5.93ns
+The critical path consists of the following:
+	'icmp' operation ('notrhs', core.cpp:58) [59]  (2.41 ns)
+	'or' operation ('tmp_20', core.cpp:58) [60]  (0 ns)
+	'and' operation ('tmp_22', core.cpp:59) [62]  (0 ns)
+	'select' operation ('storemerge', core.cpp:59) [63]  (1.37 ns)
+	'store' operation (core.cpp:58) of variable 'storemerge', core.cpp:59 on array 'h1', core.cpp:25 [64]  (2.15 ns)
+
+ <State 22>: 1.86ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', core.cpp:63) [69]  (0 ns)
+	'add' operation ('i', core.cpp:63) [72]  (1.86 ns)
+
+ <State 23>: 7.02ns
+The critical path consists of the following:
+	'phi' operation ('j') with incoming values : ('j', core.cpp:65) [81]  (0 ns)
+	'sub' operation ('tmp_33', core.cpp:66) [92]  (0 ns)
+	'add' operation ('tmp_34', core.cpp:66) [93]  (3.77 ns)
+	'getelementptr' operation ('theta2h3_addr', core.cpp:66) [95]  (0 ns)
+	'load' operation ('theta2h3_load', core.cpp:66) on array 'theta2h3' [98]  (3.26 ns)
+
+ <State 24>: 3.26ns
+The critical path consists of the following:
+	'load' operation ('theta2h3_load', core.cpp:66) on array 'theta2h3' [98]  (3.26 ns)
+
+ <State 25>: 7.8ns
+The critical path consists of the following:
+	'load' operation ('h1_load', core.cpp:66) on array 'h1', core.cpp:25 [97]  (2.15 ns)
+	'fmul' operation ('tmp_18', core.cpp:66) [99]  (5.64 ns)
+
+ <State 26>: 5.64ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_18', core.cpp:66) [99]  (5.64 ns)
+
+ <State 27>: 5.64ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_18', core.cpp:66) [99]  (5.64 ns)
+
+ <State 28>: 5.64ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_18', core.cpp:66) [99]  (5.64 ns)
+
+ <State 29>: 7.18ns
+The critical path consists of the following:
+	'fadd' operation ('tmp_19', core.cpp:66) [100]  (7.18 ns)
+
+ <State 30>: 7.18ns
+The critical path consists of the following:
+	'fadd' operation ('tmp_19', core.cpp:66) [100]  (7.18 ns)
+
+ <State 31>: 7.18ns
+The critical path consists of the following:
+	'fadd' operation ('tmp_19', core.cpp:66) [100]  (7.18 ns)
+
+ <State 32>: 7.18ns
+The critical path consists of the following:
+	'fadd' operation ('tmp_19', core.cpp:66) [100]  (7.18 ns)
+
+ <State 33>: 7.18ns
+The critical path consists of the following:
+	'fadd' operation ('tmp_19', core.cpp:66) [100]  (7.18 ns)
+
+ <State 34>: 3.26ns
+The critical path consists of the following:
+	'load' operation ('theta2b4_load', core.cpp:68) on array 'theta2b4' [104]  (3.26 ns)
+
+ <State 35>: 7.18ns
+The critical path consists of the following:
+	'fadd' operation ('tmp_15', core.cpp:68) [105]  (7.18 ns)
+
+ <State 36>: 7.18ns
+The critical path consists of the following:
+	'fadd' operation ('tmp_15', core.cpp:68) [105]  (7.18 ns)
+
+ <State 37>: 7.18ns
+The critical path consists of the following:
+	'fadd' operation ('tmp_15', core.cpp:68) [105]  (7.18 ns)
+
+ <State 38>: 7.18ns
+The critical path consists of the following:
+	'fadd' operation ('tmp_15', core.cpp:68) [105]  (7.18 ns)
+
+ <State 39>: 7.18ns
+The critical path consists of the following:
+	'fadd' operation ('tmp_15', core.cpp:68) [105]  (7.18 ns)
+
+ <State 40>: 6.62ns
+The critical path consists of the following:
+	'fcmp' operation ('tmp_26', core.cpp:69) [112]  (6.62 ns)
+
+ <State 41>: 5.93ns
+The critical path consists of the following:
+	'icmp' operation ('notrhs8', core.cpp:68) [110]  (2.41 ns)
+	'or' operation ('tmp_25', core.cpp:68) [111]  (0 ns)
+	'and' operation ('tmp_27', core.cpp:69) [113]  (0 ns)
+	'select' operation ('storemerge2', core.cpp:69) [114]  (1.37 ns)
+	'store' operation (core.cpp:68) of variable 'storemerge2', core.cpp:69 on array 'h2', core.cpp:45 [115]  (2.15 ns)
+
+ <State 42>: 7.18ns
+The critical path consists of the following:
+	'phi' operation ('h3') with incoming values : ('h3', core.cpp:74) [120]  (0 ns)
+	'fadd' operation ('h3', core.cpp:76) [136]  (7.18 ns)
+
+ <State 43>: 3.26ns
+The critical path consists of the following:
+	'load' operation ('theta3h5_load', core.cpp:74) on array 'theta3h5' [131]  (3.26 ns)
+
+ <State 44>: 5.64ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_14', core.cpp:74) [132]  (5.64 ns)
+
+ <State 45>: 5.64ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_14', core.cpp:74) [132]  (5.64 ns)
+
+ <State 46>: 5.64ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_14', core.cpp:74) [132]  (5.64 ns)
+
+ <State 47>: 5.64ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_14', core.cpp:74) [132]  (5.64 ns)
+
+ <State 48>: 7.18ns
+The critical path consists of the following:
+	'fadd' operation ('h3', core.cpp:74) [133]  (7.18 ns)
+
+ <State 49>: 7.18ns
+The critical path consists of the following:
+	'fadd' operation ('h3', core.cpp:74) [133]  (7.18 ns)
+
+ <State 50>: 7.18ns
+The critical path consists of the following:
+	'fadd' operation ('h3', core.cpp:74) [133]  (7.18 ns)
+
+ <State 51>: 7.18ns
+The critical path consists of the following:
+	'fadd' operation ('h3', core.cpp:74) [133]  (7.18 ns)
+
+ <State 52>: 7.18ns
+The critical path consists of the following:
+	'fadd' operation ('h3', core.cpp:74) [133]  (7.18 ns)
+
+ <State 53>: 7.18ns
+The critical path consists of the following:
+	'fadd' operation ('h3', core.cpp:76) [136]  (7.18 ns)
+
+ <State 54>: 7.18ns
+The critical path consists of the following:
+	'fadd' operation ('h3', core.cpp:76) [136]  (7.18 ns)
+
+ <State 55>: 7.18ns
+The critical path consists of the following:
+	'fadd' operation ('h3', core.cpp:76) [136]  (7.18 ns)
+
+ <State 56>: 7.18ns
+The critical path consists of the following:
+	'fadd' operation ('h3', core.cpp:76) [136]  (7.18 ns)
+
+ <State 57>: 6.62ns
+The critical path consists of the following:
+	'xor' operation ('tmp_neg', core.cpp:77) [138]  (1.27 ns)
+	'fpext' operation ('tmp_8', core.cpp:77) [140]  (5.35 ns)
+
+ <State 58>: 7.32ns
+The critical path consists of the following:
+	'dexp' operation ('tmp_10', core.cpp:77) [141]  (7.32 ns)
+
+ <State 59>: 7.32ns
+The critical path consists of the following:
+	'dexp' operation ('tmp_10', core.cpp:77) [141]  (7.32 ns)
+
+ <State 60>: 7.32ns
+The critical path consists of the following:
+	'dexp' operation ('tmp_10', core.cpp:77) [141]  (7.32 ns)
+
+ <State 61>: 7.32ns
+The critical path consists of the following:
+	'dexp' operation ('tmp_10', core.cpp:77) [141]  (7.32 ns)
+
+ <State 62>: 7.32ns
+The critical path consists of the following:
+	'dexp' operation ('tmp_10', core.cpp:77) [141]  (7.32 ns)
+
+ <State 63>: 7.32ns
+The critical path consists of the following:
+	'dexp' operation ('tmp_10', core.cpp:77) [141]  (7.32 ns)
+
+ <State 64>: 7.32ns
+The critical path consists of the following:
+	'dexp' operation ('tmp_10', core.cpp:77) [141]  (7.32 ns)
+
+ <State 65>: 7.32ns
+The critical path consists of the following:
+	'dexp' operation ('tmp_10', core.cpp:77) [141]  (7.32 ns)
+
+ <State 66>: 7.32ns
+The critical path consists of the following:
+	'dexp' operation ('tmp_10', core.cpp:77) [141]  (7.32 ns)
+
+ <State 67>: 7.32ns
+The critical path consists of the following:
+	'dexp' operation ('tmp_10', core.cpp:77) [141]  (7.32 ns)
+
+ <State 68>: 7.32ns
+The critical path consists of the following:
+	'dexp' operation ('tmp_10', core.cpp:77) [141]  (7.32 ns)
+
+ <State 69>: 7.32ns
+The critical path consists of the following:
+	'dexp' operation ('tmp_10', core.cpp:77) [141]  (7.32 ns)
+
+ <State 70>: 7.32ns
+The critical path consists of the following:
+	'dexp' operation ('tmp_10', core.cpp:77) [141]  (7.32 ns)
+
+ <State 71>: 7.32ns
+The critical path consists of the following:
+	'dexp' operation ('tmp_10', core.cpp:77) [141]  (7.32 ns)
+
+ <State 72>: 7.32ns
+The critical path consists of the following:
+	'dexp' operation ('tmp_10', core.cpp:77) [141]  (7.32 ns)
+
+ <State 73>: 7.32ns
+The critical path consists of the following:
+	'dexp' operation ('tmp_10', core.cpp:77) [141]  (7.32 ns)
+
+ <State 74>: 7.32ns
+The critical path consists of the following:
+	'dexp' operation ('tmp_10', core.cpp:77) [141]  (7.32 ns)
+
+ <State 75>: 7.32ns
+The critical path consists of the following:
+	'dexp' operation ('tmp_10', core.cpp:77) [141]  (7.32 ns)
+
+ <State 76>: 8.37ns
+The critical path consists of the following:
+	'dadd' operation ('tmp_11', core.cpp:77) [142]  (8.37 ns)
+
+ <State 77>: 8.37ns
+The critical path consists of the following:
+	'dadd' operation ('tmp_11', core.cpp:77) [142]  (8.37 ns)
+
+ <State 78>: 8.37ns
+The critical path consists of the following:
+	'dadd' operation ('tmp_11', core.cpp:77) [142]  (8.37 ns)
+
+ <State 79>: 8.37ns
+The critical path consists of the following:
+	'dadd' operation ('tmp_11', core.cpp:77) [142]  (8.37 ns)
+
+ <State 80>: 8.37ns
+The critical path consists of the following:
+	'dadd' operation ('tmp_11', core.cpp:77) [142]  (8.37 ns)
+
+ <State 81>: 8.37ns
+The critical path consists of the following:
+	'dadd' operation ('tmp_11', core.cpp:77) [142]  (8.37 ns)
+
+ <State 82>: 8.45ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_12', core.cpp:77) [143]  (8.45 ns)
+
+ <State 83>: 8.45ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_12', core.cpp:77) [143]  (8.45 ns)
+
+ <State 84>: 8.45ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_12', core.cpp:77) [143]  (8.45 ns)
+
+ <State 85>: 8.45ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_12', core.cpp:77) [143]  (8.45 ns)
+
+ <State 86>: 8.45ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_12', core.cpp:77) [143]  (8.45 ns)
+
+ <State 87>: 8.45ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_12', core.cpp:77) [143]  (8.45 ns)
+
+ <State 88>: 8.45ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_12', core.cpp:77) [143]  (8.45 ns)
+
+ <State 89>: 8.45ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_12', core.cpp:77) [143]  (8.45 ns)
+
+ <State 90>: 8.45ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_12', core.cpp:77) [143]  (8.45 ns)
+
+ <State 91>: 8.45ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_12', core.cpp:77) [143]  (8.45 ns)
+
+ <State 92>: 8.45ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_12', core.cpp:77) [143]  (8.45 ns)
+
+ <State 93>: 8.45ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_12', core.cpp:77) [143]  (8.45 ns)
+
+ <State 94>: 8.45ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_12', core.cpp:77) [143]  (8.45 ns)
+
+ <State 95>: 8.45ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_12', core.cpp:77) [143]  (8.45 ns)
+
+ <State 96>: 8.45ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_12', core.cpp:77) [143]  (8.45 ns)
+
+ <State 97>: 8.45ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_12', core.cpp:77) [143]  (8.45 ns)
+
+ <State 98>: 8.45ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_12', core.cpp:77) [143]  (8.45 ns)
+
+ <State 99>: 8.45ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_12', core.cpp:77) [143]  (8.45 ns)
+
+ <State 100>: 8.45ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_12', core.cpp:77) [143]  (8.45 ns)
+
+ <State 101>: 8.45ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_12', core.cpp:77) [143]  (8.45 ns)
+
+ <State 102>: 8.45ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_12', core.cpp:77) [143]  (8.45 ns)
+
+ <State 103>: 8.45ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_12', core.cpp:77) [143]  (8.45 ns)
+
+ <State 104>: 8.45ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_12', core.cpp:77) [143]  (8.45 ns)
+
+ <State 105>: 8.45ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_12', core.cpp:77) [143]  (8.45 ns)
+
+ <State 106>: 8.45ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_12', core.cpp:77) [143]  (8.45 ns)
+
+ <State 107>: 8.45ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_12', core.cpp:77) [143]  (8.45 ns)
+
+ <State 108>: 8.45ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_12', core.cpp:77) [143]  (8.45 ns)
+
+ <State 109>: 8.45ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_12', core.cpp:77) [143]  (8.45 ns)
+
+ <State 110>: 8.45ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_12', core.cpp:77) [143]  (8.45 ns)
+
+ <State 111>: 8.45ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_12', core.cpp:77) [143]  (8.45 ns)
+
+ <State 112>: 8.45ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_12', core.cpp:77) [143]  (8.45 ns)
+
+ <State 113>: 6.4ns
+The critical path consists of the following:
+	'fptrunc' operation ('h3', core.cpp:77) [144]  (6.4 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+	State 30
+	State 31
+	State 32
+	State 33
+	State 34
+	State 35
+	State 36
+	State 37
+	State 38
+	State 39
+	State 40
+	State 41
+	State 42
+	State 43
+	State 44
+	State 45
+	State 46
+	State 47
+	State 48
+	State 49
+	State 50
+	State 51
+	State 52
+	State 53
+	State 54
+	State 55
+	State 56
+	State 57
+	State 58
+	State 59
+	State 60
+	State 61
+	State 62
+	State 63
+	State 64
+	State 65
+	State 66
+	State 67
+	State 68
+	State 69
+	State 70
+	State 71
+	State 72
+	State 73
+	State 74
+	State 75
+	State 76
+	State 77
+	State 78
+	State 79
+	State 80
+	State 81
+	State 82
+	State 83
+	State 84
+	State 85
+	State 86
+	State 87
+	State 88
+	State 89
+	State 90
+	State 91
+	State 92
+	State 93
+	State 94
+	State 95
+	State 96
+	State 97
+	State 98
+	State 99
+	State 100
+	State 101
+	State 102
+	State 103
+	State 104
+	State 105
+	State 106
+	State 107
+	State 108
+	State 109
+	State 110
+	State 111
+	State 112
+	State 113
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
