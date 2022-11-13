@@ -50,7 +50,10 @@ def C():
     # print(model.layers[2].weights[0])
     # print(model.layers[2].weights[1])        
     
-    print("y_pred:",y_pred[1]) #[0.96707326]
-    print("X_Test: ",X_test[1]) # [1.3538  1.2087  1.0842  1.1102  1.326   0.90461 0.87229]
+    print("y_pred:",y_pred[0]) #[0.96707326]
+    print("X_Test: ",X_test[0]) # [1.3538  1.2087  1.0842  1.1102  1.326   0.90461 0.87229]
+    
+    print("y_pred:",y_pred[1]) #[0.00064328]
+    print("X_Test: ",X_test[1]) # [0.95566 0.93661 0.91783 1.0815  1.1369  1.1075  0.81786]
               
 C()
