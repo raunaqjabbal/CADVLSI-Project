@@ -2,6 +2,10 @@ import pandas as pd
 import numpy as np
 from sklearn import metrics
 import tensorflow as tf
+import sys
+np.set_printoptions(threshold=sys.maxsize)
+pd.set_option('display.max_rows', None)
+
 
 def C():
     dataset = pd.read_csv("./ClassificationDataTrain.csv",header=None)
@@ -28,7 +32,6 @@ def C():
     # y_pred2=np.array(y_pred>0.5,dtype="int")
     # y_pred2=y_pred2.flatten()
     
-    
     # #model.summary()
     model = create_model()
     model.load_weights('./checkpoints/my_checkpoint')
@@ -36,12 +39,12 @@ def C():
     y_pred2=np.array(y_pred>0.5,dtype="int")
     y_pred2=y_pred2.flatten()
     
-    # print(model.layers[0].weights[0].shape)
-    # print(model.layers[0].weights[1].shape)
-    # print(model.layers[1].weights[0].shape)
-    # print(model.layers[1].weights[1].shape)
-    # print(model.layers[2].weights[0].shape)
-    # print(model.layers[2].weights[1].shape)        
+    # print("Layer 1 Weights",model.layers[0].weights[0])
+    # print("Layer 1 Bias",model.layers[0].weights[1])
+    print("Layer 2 Weights\n",pd.DataFrame(model.layers[1].weights[0]))
+    print("Layer 2 Bias",model.layers[1].weights[1])
+    # print("Layer 3 Weights",model.layers[2].weights[0])
+    # print("Layer 3 Bias",model.layers[2].weights[1])       
     
     # print(model.layers[0].weights[0])
     # print(model.layers[0].weights[1])

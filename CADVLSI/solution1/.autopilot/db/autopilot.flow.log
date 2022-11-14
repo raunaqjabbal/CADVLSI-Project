@@ -1,50 +1,50 @@
-INFO: [HLS 200-0] Workspace C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1 opened at Thu Nov 03 15:09:44 +0530 2022
+INFO: [HLS 200-0] Workspace C:/Users/Raunaq/Desktop/CADVLSI-Project/CADVLSI/solution1 opened at Sun Nov 13 21:33:33 +0530 2022
 Execute     config_clock -quiet -name default -period 10 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-Command     config_clock returned 0; 0 sec.
+Command     config_clock returned 0; 0.041 sec.
 Execute     open_platform DefaultPlatform 
-Command     open_platform returned 0; 0.001 sec.
+Command     open_platform returned 0; 0.052 sec.
 Execute     import_lib E:/Vivado/2018.1/common/technology/xilinx/aartix7/aartix7 
 Execute       source E:/Vivado/2018.1/common/technology/xilinx/common/xilinx.lib 
 Execute         source E:/Vivado/2018.1/common/technology/xilinx/interface/xilinx_interface.lib 
 Execute           source E:/Vivado/2018.1/common/technology/xilinx/interface/plb46.lib 
-Command           ap_source returned 0; 0.001 sec.
+Command           ap_source returned 0; 0.077 sec.
 Execute           source E:/Vivado/2018.1/common/technology/xilinx/interface/fsl.lib 
-Command           ap_source returned 0; 0.001 sec.
+Command           ap_source returned 0; 0.002 sec.
 Execute           source E:/Vivado/2018.1/common/technology/xilinx/interface/axi4.lib 
-Command           ap_source returned 0; 0 sec.
+Command           ap_source returned 0; 0.051 sec.
 Execute           source E:/Vivado/2018.1/common/technology/xilinx/interface/maxi.lib 
 Command           ap_source returned 0; 0.001 sec.
 Execute           source E:/Vivado/2018.1/common/technology/xilinx/interface/saxilite.lib 
-Command           ap_source returned 0; 0 sec.
-Command         ap_source returned 0; 0.003 sec.
+Command           ap_source returned 0; 0.001 sec.
+Command         ap_source returned 0; 0.166 sec.
 Execute         source E:/Vivado/2018.1/common/technology/xilinx/common/dsp48.lib 
-Command         ap_source returned 0; 0 sec.
+Command         ap_source returned 0; 0.003 sec.
 Execute         source E:/Vivado/2018.1/common/technology/xilinx/ip/dds_compiler.lib 
-Command         ap_source returned 0; 0.001 sec.
+Command         ap_source returned 0; 0.002 sec.
 Execute         source E:/Vivado/2018.1/common/technology/xilinx/ip/xfft.lib 
-Command         ap_source returned 0; 0 sec.
-Execute         source E:/Vivado/2018.1/common/technology/xilinx/ip/xfir.lib 
 Command         ap_source returned 0; 0.001 sec.
-Command       ap_source returned 0; 0.01 sec.
+Execute         source E:/Vivado/2018.1/common/technology/xilinx/ip/xfir.lib 
+Command         ap_source returned 0; 0.002 sec.
+Command       ap_source returned 0; 0.252 sec.
 Execute       source E:/Vivado/2018.1/common/technology/xilinx/common/xilinx_old.lib 
-Command       ap_source returned 0; 0.002 sec.
+Command       ap_source returned 0; 0.017 sec.
 Execute       source E:/Vivado/2018.1/common/technology/xilinx/common/xilinx_vivado.lib 
-Command       ap_source returned 0; 0.002 sec.
+Command       ap_source returned 0; 0.003 sec.
 Execute       source E:/Vivado/2018.1/common/technology/xilinx/common/xilinx.hlp 
 Execute         source E:/Vivado/2018.1/common/technology/xilinx/common/target_info.tcl 
-Command         ap_source returned 0; 0.001 sec.
+Command         ap_source returned 0; 0.021 sec.
 Execute         source E:/Vivado/2018.1/common/technology/xilinx/interface/xilinx_interface.hlp 
 Execute           source E:/Vivado/2018.1/common/technology/xilinx/interface/maxi.hlp 
-Command           ap_source returned 0; 0 sec.
+Command           ap_source returned 0; 0.023 sec.
 Execute           source E:/Vivado/2018.1/common/technology/xilinx/interface/saxilite.hlp 
-Command           ap_source returned 0; 0.001 sec.
-Command         ap_source returned 0; 0.002 sec.
+Command           ap_source returned 0; 0.007 sec.
+Command         ap_source returned 0; 0.031 sec.
 Execute         source E:/Vivado/2018.1/common/technology/xilinx/common/dsp48.hlp 
-Command         ap_source returned 0; 0.003 sec.
-Command       ap_source returned 0; 0.008 sec.
+Command         ap_source returned 0; 0.016 sec.
+Command       ap_source returned 0; 0.083 sec.
 Execute       source E:/Vivado/2018.1/common/technology/xilinx/aartix7/dsp48e1.hlp 
-Command       ap_source returned 0; 0.001 sec.
+Command       ap_source returned 0; 0.021 sec.
 Execute       get_default_platform 
 Command       get_default_platform returned 0; 0 sec.
 Execute       config_chip_info -quiet -resource  {SLICE 15850} {LUT 63400}     {FF 126800} {DSP48E 240}    {BRAM 270}  
@@ -53,675 +53,127 @@ Execute       config_chip_info -quiet -speed medium
 Command       config_chip_info returned 0; 0 sec.
 Execute       source E:/Vivado/2018.1/common/technology/xilinx/common/xilinx.hlp 
 Execute         source E:/Vivado/2018.1/common/technology/xilinx/common/target_info.tcl 
-Command         ap_source returned 0; 0.002 sec.
+Command         ap_source returned 0; 0 sec.
 Execute         source E:/Vivado/2018.1/common/technology/xilinx/interface/xilinx_interface.hlp 
 Execute           source E:/Vivado/2018.1/common/technology/xilinx/interface/maxi.hlp 
 Command           ap_source returned 0; 0 sec.
 Execute           source E:/Vivado/2018.1/common/technology/xilinx/interface/saxilite.hlp 
 Command           ap_source returned 0; 0 sec.
-Command         ap_source returned 0; 0.001 sec.
+Command         ap_source returned 0; 0 sec.
 Execute         source E:/Vivado/2018.1/common/technology/xilinx/common/dsp48.hlp 
-Command         ap_source returned 0; 0.002 sec.
-Command       ap_source returned 0; 0.008 sec.
-Command     import_lib returned 0; 0.04 sec.
+Command         ap_source returned 0; 0.001 sec.
+Command       ap_source returned 0; 0.004 sec.
+Command     import_lib returned 0; 0.437 sec.
 Execute     source E:/Vivado/2018.1/common/technology/xilinx/aartix7/aartix7.gen 
 Execute       source E:/Vivado/2018.1/common/technology/xilinx/common/virtex.gen 
 Execute         source E:/Vivado/2018.1/common/technology/xilinx/common/xilinx.gen 
 Execute           source E:/Vivado/2018.1/common/technology/xilinx/interface/plb46.gen 
-Command           ap_source returned 0; 0.002 sec.
+Command           ap_source returned 0; 0.009 sec.
 Execute           source E:/Vivado/2018.1/common/technology/xilinx/interface/fsl.gen 
-Command           ap_source returned 0; 0.001 sec.
+Command           ap_source returned 0; 0.013 sec.
 Execute           source E:/Vivado/2018.1/common/technology/xilinx/interface/axi4.gen 
-Command           ap_source returned 0; 0.007 sec.
+Command           ap_source returned 0; 0.02 sec.
 Execute           source E:/Vivado/2018.1/common/technology/xilinx/interface/nativeAXI4.gen 
 Execute             source E:/Vivado/2018.1/common/technology/xilinx/interface/saxilite.gen 
-Command             ap_source returned 0; 0.006 sec.
+Command             ap_source returned 0; 0.034 sec.
 Execute             source E:/Vivado/2018.1/common/technology/xilinx/interface/maxi.gen 
-Command             ap_source returned 0; 0.012 sec.
-Command           ap_source returned 0; 0.019 sec.
+Command             ap_source returned 0; 0.037 sec.
+Command           ap_source returned 0; 0.072 sec.
 Execute           source E:/Vivado/2018.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Command           ap_source returned 0; 0.017 sec.
+Command           ap_source returned 0; 0.079 sec.
 Execute           source E:/Vivado/2018.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Command           ap_source returned 0; 0.014 sec.
+Command           ap_source returned 0; 0.033 sec.
 Execute           source E:/Vivado/2018.1/common/technology/xilinx/ip/dds_compiler.gen 
-Command           ap_source returned 0; 0.005 sec.
+Command           ap_source returned 0; 0.012 sec.
 Execute           source E:/Vivado/2018.1/common/technology/xilinx/ip/util.gen 
-Command           ap_source returned 0; 0.001 sec.
+Command           ap_source returned 0; 0.011 sec.
 Execute           source E:/Vivado/2018.1/common/technology/xilinx/ip/xfft.gen 
-Command           ap_source returned 0; 0.184 sec.
+Command           ap_source returned 0; 0.122 sec.
 Execute           source E:/Vivado/2018.1/common/technology/xilinx/ip/xfir.gen 
-Command           ap_source returned 0; 0.002 sec.
-Command         ap_source returned 0; 0.254 sec.
+Command           ap_source returned 0; 0.004 sec.
+Command         ap_source returned 0; 0.393 sec.
 Execute         source E:/Vivado/2018.1/common/technology/xilinx/common/dsp48.gen 
-Command         ap_source returned 0; 0 sec.
-Command       ap_source returned 0; 0.257 sec.
-Command     ap_source returned 0; 0.257 sec.
+Command         ap_source returned 0; 0.003 sec.
+Command       ap_source returned 0; 0.42 sec.
+Command     ap_source returned 0; 0.421 sec.
 Execute     open_platform DefaultPlatform 
 Command     open_platform returned 0; 0 sec.
 Execute     import_lib E:/Vivado/2018.1/common/technology/xilinx/aartix7/aartix7_fpv6 
 Execute       source E:/Vivado/2018.1/common/technology/xilinx/common/xilinx_fpv7.lib 
 Execute         source E:/Vivado/2018.1/common/technology/xilinx/common/xilinx_hp.lib 
-Command         ap_source returned 0; 0.001 sec.
-Command       ap_source returned 0; 0.005 sec.
+Command         ap_source returned 0; 0.003 sec.
+Command       ap_source returned 0; 0.023 sec.
 Execute       source E:/Vivado/2018.1/common/technology/xilinx/common/xilinx_fpv.hlp 
 Execute         source E:/Vivado/2018.1/common/technology/xilinx/common/xilinx.hlp 
 Execute           source E:/Vivado/2018.1/common/technology/xilinx/common/target_info.tcl 
-Command           ap_source returned 0; 0.038 sec.
+Command           ap_source returned 0; 0.011 sec.
 Execute           source E:/Vivado/2018.1/common/technology/xilinx/interface/xilinx_interface.hlp 
 Execute             source E:/Vivado/2018.1/common/technology/xilinx/interface/maxi.hlp 
-Command             ap_source returned 0; 0.001 sec.
-Execute             source E:/Vivado/2018.1/common/technology/xilinx/interface/saxilite.hlp 
 Command             ap_source returned 0; 0 sec.
+Execute             source E:/Vivado/2018.1/common/technology/xilinx/interface/saxilite.hlp 
+Command             ap_source returned 0; 0.001 sec.
 Command           ap_source returned 0; 0.001 sec.
 Execute           source E:/Vivado/2018.1/common/technology/xilinx/common/dsp48.hlp 
 Command           ap_source returned 0; 0.001 sec.
-Command         ap_source returned 0; 0.043 sec.
-Command       ap_source returned 0; 0.043 sec.
+Command         ap_source returned 0; 0.014 sec.
+Command       ap_source returned 0; 0.018 sec.
 Execute       source E:/Vivado/2018.1/common/technology/xilinx/aartix7/aartix7_hp.hlp 
-Command       ap_source returned 0; 0.003 sec.
-Command     import_lib returned 0; 0.061 sec.
+Command       ap_source returned 0; 0.007 sec.
+Command     import_lib returned 0; 0.083 sec.
 Execute     source E:/Vivado/2018.1/common/technology/xilinx/aartix7/aartix7_fpv6.gen 
 Execute       source E:/Vivado/2018.1/common/technology/xilinx/common/xilinx_fpv6.gen 
-Command       ap_source returned 0; 0.005 sec.
-Command     ap_source returned 0; 0.005 sec.
+Command       ap_source returned 0; 0.024 sec.
+Command     ap_source returned 0; 0.025 sec.
 Execute     set_part xa7a12tcsg325-1q 
 Execute       add_library xilinx/aartix7/aartix7:xa7a12t:csg325:-1q 
 Execute         get_default_platform 
 Command         get_default_platform returned 0; 0 sec.
 Execute         license_isbetapart xa7a12t 
-Command         license_isbetapart returned 1; 0.018 sec.
+Command         license_isbetapart returned 1; 0.008 sec.
 Execute         get_default_platform 
 Command         get_default_platform returned 0; 0 sec.
 Execute         config_chip_info -quiet -resource  {SLICE 2000}  {LUT 8000}      {FF 16000}  {DSP48E 20}     {BRAM 40}  
 Command         config_chip_info returned 0; 0 sec.
 Execute         config_chip_info -quiet -speed slow 
 Command         config_chip_info returned 0; 0 sec.
-Command       add_library returned 0; 0.029 sec.
+Command       add_library returned 0; 0.012 sec.
 Execute       add_library xilinx/aartix7/aartix7_fpv6 
 Execute         get_default_platform 
 Command         get_default_platform returned 0; 0 sec.
-Command       add_library returned 0; 0.003 sec.
+Command       add_library returned 0; 0.002 sec.
 INFO: [HLS 200-10] Setting target device to 'xa7a12tcsg325-1q'
 Execute       get_default_platform 
 Command       get_default_platform returned 0; 0 sec.
-Command     set_part returned 0; 0.085 sec.
+Command     set_part returned 0; 0.047 sec.
 Execute     get_default_platform 
 Command     get_default_platform returned 0; 0 sec.
 Execute     config_chip_info -quiet -resource  {SLICE 2000}  {LUT 8000}      {FF 16000}  {DSP48E 20}     {BRAM 40}  
 Command     config_chip_info returned 0; 0 sec.
 Execute     config_chip_info -quiet -speed slow 
 Command     config_chip_info returned 0; 0 sec.
-Command   open_solution returned 0; 0.543 sec.
-Execute   set_part xa7a12tcsg325-1q 
-Execute     add_library xilinx/aartix7/aartix7:xa7a12t:csg325:-1q 
-Execute       get_default_platform 
-Command       get_default_platform returned 0; 0 sec.
-Execute       license_isbetapart xa7a12t 
-Command       license_isbetapart returned 1; 0 sec.
-Execute       get_default_platform 
-Command       get_default_platform returned 0; 0 sec.
-Execute       config_chip_info -quiet -resource  {SLICE 2000}  {LUT 8000}      {FF 16000}  {DSP48E 20}     {BRAM 40}  
-Command       config_chip_info returned 0; 0 sec.
-Execute       config_chip_info -quiet -speed slow 
-Command       config_chip_info returned 0; 0 sec.
-Command     add_library returned 0; 0.01 sec.
-Execute     add_library xilinx/aartix7/aartix7_fpv6 
-Execute       get_default_platform 
-Command       get_default_platform returned 0; 0 sec.
-Command     add_library returned 0; 0.004 sec.
+Command   open_solution returned 0; 1.261 sec.
+Execute   csim_design -quiet 
+Execute     source C:/Users/Raunaq/Desktop/CADVLSI-Project/CADVLSI/solution1/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0.001 sec.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Command     ap_source returned 0; 0.002 sec.
+Execute     is_encrypted C:/Users/Raunaq/Desktop/CADVLSI-Project/test_hand_nn.cpp 
+Command     is_encrypted returned 0; 0.016 sec.
+Execute     is_xip C:/Users/Raunaq/Desktop/CADVLSI-Project/test_hand_nn.cpp 
+Command     is_xip returned 0; 0.001 sec.
+Execute     is_encrypted C:/Users/Raunaq/Desktop/CADVLSI-Project/core.cpp 
+Command     is_encrypted returned 0; 0 sec.
+Execute     is_xip C:/Users/Raunaq/Desktop/CADVLSI-Project/core.cpp 
+Command     is_xip returned 0; 0 sec.
 Execute     get_default_platform 
 Command     get_default_platform returned 0; 0 sec.
-Command   set_part returned 0; 0.065 sec.
-Execute   create_clock -period 10 -name default 
-Execute     config_clock -quiet -name default -period 10 -default=false 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-Command     config_clock returned 0; 0 sec.
-Command   create_clock returned 0; 0.003 sec.
-Execute   csynth_design 
-Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -lm=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -enable_clang39=0 
-INFO: [HLS 200-10] Analyzing design file 'core.cpp' ...
-INFO: [HLS 200-0] Compiling one TU...
-Execute       is_m_axi_addr64 
-Command       is_m_axi_addr64 returned 0; 0.104 sec.
-INFO: [HLS 200-0] Handling core.cpp as C++
-Execute       get_default_platform 
-Command       get_default_platform returned 0; 0 sec.
-Execute       is_encrypted core.cpp 
-Command       is_encrypted returned 0; 0.001 sec.
-Execute       get_default_platform 
-Command       get_default_platform returned 0; 0 sec.
-INFO: [HLS 200-0] Source preprocessing
-Execute       clang  -fno-limit-debug-info -gcc-toolchain "E:/Vivado/2018.1/msys" -hls  -fno-exceptions  -D__llvm__  -E "core.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "E:/Vivado/2018.1/common/technology/autopilot" -I "E:/Vivado/2018.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/core.pp.0.cpp" 
-INFO: [HLS 200-0] exec clang -fno-limit-debug-info -gcc-toolchain E:/Vivado/2018.1/msys -hls -fno-exceptions -D__llvm__ -E core.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I E:/Vivado/2018.1/common/technology/autopilot -I E:/Vivado/2018.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/core.pp.0.cpp
-Command       clang returned 0; 5.668 sec.
-INFO: [HLS 200-0] Syntax Checking before pre-processing...
-Execute       clang  -fno-limit-debug-info -gcc-toolchain "E:/Vivado/2018.1/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "E:/Vivado/2018.1/common/technology/autopilot" -I "E:/Vivado/2018.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/core.pp.0.cpp"  -o "C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/useless.bc"  
-INFO: [HLS 200-0] exec clang -fno-limit-debug-info -gcc-toolchain E:/Vivado/2018.1/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I E:/Vivado/2018.1/common/technology/autopilot -I E:/Vivado/2018.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/core.pp.0.cpp -o C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/useless.bc
-Command       clang returned 0; 3.495 sec.
-INFO: [HLS 200-0] GCC PP time: 9 seconds per iteration
-Execute       list_core -type functional_unit 
-Command       list_core returned 0; 0 sec.
-INFO: [HLS 200-0] CDT Preprocessing...
-INFO: [HLS 200-0] Marker-Pragma convertor: C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/core.pp.0.cpp C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/core.pp.0.cpp.ap-line.cpp C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/core.pp.0.cpp.ap-line.cpp.CXX 1
-INFO: [HLS 200-0] Converting Markers to Pragmas...
-Execute       cdt  "C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/core.pp.0.cpp.ap-line.cpp"  -m "hand_num_nn" -o "C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/core.pp.0.cpp.ap-cdt.cpp" --pp --directive C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/solution1.directive --source C:/Users/Raunaq/Desktop/CADVLSI/core.cpp --error C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db --funcunit "AddSub AddSub_DSP AddSubnS DAddSub_fulldsp DAddSub_nodsp DDiv DExp_fulldsp DExp_meddsp DExp_nodsp DLog_fulldsp DLog_meddsp DLog_nodsp DMul_fulldsp DMul_maxdsp DMul_meddsp DMul_nodsp DRSqrt DRecip DSP_Macro DSqrt DivnS FAddSub_fulldsp FAddSub_nodsp FDiv FExp_fulldsp FExp_meddsp FExp_nodsp FLog_fulldsp FLog_meddsp FLog_nodsp FMul_fulldsp FMul_maxdsp FMul_meddsp FMul_nodsp FRSqrt_fulldsp FRSqrt_nodsp FRecip_fulldsp FRecip_nodsp FSqrt HAddSub_fulldsp HAddSub_meddsp HAddSub_nodsp HDiv HMul_fulldsp HMul_maxdsp HMul_nodsp HSqrt Mul Mul2S Mul3S Mul4S Mul5S Mul6S Mul_LUT MulnS MuxnS" --ve --vetcl C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db --ca --es --gf --pd --p2d C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db --sd --scff C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/.systemc_flag --ad 
-Command       cdt returned 0; 10.916 sec.
-INFO: [HLS 200-0] Marker-Pragma convertor: C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/core.pp.0.cpp.ap-cdt.cpp C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/core.pragma.0.cpp C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/core.pragma.0.cpp.ap-line.CXX 0
-INFO: [HLS 200-0] Converting Pragmas to Markers...
-Execute       source C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/pragma.status.tcl 
-Command       ap_source returned 0; 0.008 sec.
-INFO: [HLS 200-0] Pragma Handling...
-INFO: [HLS 200-0] Source preprocessing
-Execute       clang  -fno-limit-debug-info -gcc-toolchain "E:/Vivado/2018.1/msys" -hls  -fno-exceptions  -D__llvm__  -E "C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/core.pragma.1.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "E:/Vivado/2018.1/common/technology/autopilot" -I "E:/Vivado/2018.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/core.pragma.2.cpp" 
-INFO: [HLS 200-0] exec clang -fno-limit-debug-info -gcc-toolchain E:/Vivado/2018.1/msys -hls -fno-exceptions -D__llvm__ -E C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/core.pragma.1.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I E:/Vivado/2018.1/common/technology/autopilot -I E:/Vivado/2018.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/core.pragma.2.cpp
-Command       clang returned 0; 0.718 sec.
-Execute       get_default_platform 
-Command       get_default_platform returned 0; 0 sec.
-INFO: [HLS 200-0] Processing labels
-Execute       clang  -fno-limit-debug-info -gcc-toolchain E:/Vivado/2018.1/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/core.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "E:/Vivado/2018.1/common/technology/autopilot" -I "E:/Vivado/2018.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/core.g.bc" 
-INFO: [HLS 200-0] exec clang -fno-limit-debug-info -gcc-toolchain E:/Vivado/2018.1/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/core.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I E:/Vivado/2018.1/common/technology/autopilot -I E:/Vivado/2018.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/core.g.bc
-Command       clang returned 0; 2.128 sec.
-Execute       source C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/ve_warning.tcl 
-Command       ap_source returned 0; 0.001 sec.
-INFO: [HLS 200-10] Validating synthesis directives ...
-Execute       source C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/pragma.status.tcl 
-Command       ap_source returned 0; 0.001 sec.
-WARNING: [HLS 200-40] Directive 'RESOURCE' for core 'ROM_1P_LUTRAM' cannot be applied: Variable 'fourth_order_double::sin_K4' can not be recognized(UNKNOWN VARIABLE) in 'sincos_approximation'.
-WARNING: [HLS 200-40] Directive 'RESOURCE' for core 'ROM_1P_LUTRAM' cannot be applied: Variable 'second_order_float::sin_cos_K2' can not be recognized(UNKNOWN VARIABLE) in 'sin_or_cos_approximation'.
-WARNING: [HLS 200-40] Directive 'RESOURCE' for core 'ROM_1P_LUTRAM' cannot be applied: Variable 'fourth_order_double::sin_cos_K3' can not be recognized(UNKNOWN VARIABLE) in 'sin_or_cos_approximation'.
-WARNING: [HLS 200-40] Directive 'RESOURCE' for core 'ROM_1P_LUTRAM' cannot be applied: Variable 'second_order_float::sin_cos_K0' can not be recognized(UNKNOWN VARIABLE) in 'sin_or_cos_approximation'.
-WARNING: [HLS 200-40] Directive 'RESOURCE' for core 'ROM_1P_LUTRAM' cannot be applied: Variable 'second_order_float::sin_cos_K1' can not be recognized(UNKNOWN VARIABLE) in 'sin_or_cos_approximation'.
-WARNING: [HLS 200-40] Directive 'RESOURCE' for core 'ROM_1P_LUTRAM' cannot be applied: Variable 'fourth_order_double::sin_cos_K1' can not be recognized(UNKNOWN VARIABLE) in 'sin_or_cos_approximation'.
-WARNING: [HLS 200-40] Directive 'RESOURCE' for core 'ROM_1P_LUTRAM' cannot be applied: Variable 'fourth_order_double::sin_K1' can not be recognized(UNKNOWN VARIABLE) in 'sincos_approximation'.
-WARNING: [HLS 200-40] Directive 'RESOURCE' for core 'ROM_1P_LUTRAM' cannot be applied: Variable 'second_order_float::sin_K0' can not be recognized(UNKNOWN VARIABLE) in 'sincos_approximation'.
-WARNING: [HLS 200-40] Directive 'RESOURCE' for core 'ROM_1P_LUTRAM' cannot be applied: Variable 'second_order_float::sin_K1' can not be recognized(UNKNOWN VARIABLE) in 'sincos_approximation'.
-WARNING: [HLS 200-40] Directive 'RESOURCE' for core 'ROM_1P_LUTRAM' cannot be applied: Variable 'fourth_order_double::sin_K2' can not be recognized(UNKNOWN VARIABLE) in 'sincos_approximation'.
-WARNING: [HLS 200-40] Directive 'RESOURCE' for core 'ROM_1P_LUTRAM' cannot be applied: Variable 'fourth_order_double::cos_K4' can not be recognized(UNKNOWN VARIABLE) in 'sincos_approximation'.
-WARNING: [HLS 200-40] Directive 'RESOURCE' for core 'ROM_1P_LUTRAM' cannot be applied: Variable 'fourth_order_double::sin_K3' can not be recognized(UNKNOWN VARIABLE) in 'sincos_approximation'.
-WARNING: [HLS 200-40] Directive 'RESOURCE' for core 'ROM_1P_LUTRAM' cannot be applied: Variable 'fourth_order_double::sin_K0' can not be recognized(UNKNOWN VARIABLE) in 'sincos_approximation'.
-WARNING: [HLS 200-40] Directive 'RESOURCE' for core 'ROM_1P_LUTRAM' cannot be applied: Variable 'first_order_fixed_16::sin_cos_K0' can not be recognized(UNKNOWN VARIABLE) in 'sin_or_cos_approximation'.
-WARNING: [HLS 200-40] Directive 'RESOURCE' for core 'ROM_1P_LUTRAM' cannot be applied: Variable 'second_order_float::sin_K2' can not be recognized(UNKNOWN VARIABLE) in 'sincos_approximation'.
-WARNING: [HLS 200-40] Directive 'RESOURCE' for core 'ROM_1P_LUTRAM' cannot be applied: Variable 'fourth_order_double::cos_K1' can not be recognized(UNKNOWN VARIABLE) in 'sincos_approximation'.
-WARNING: [HLS 200-40] Directive 'RESOURCE' for core 'ROM_1P_LUTRAM' cannot be applied: Variable 'fourth_order_double::cos_K3' can not be recognized(UNKNOWN VARIABLE) in 'sincos_approximation'.
-WARNING: [HLS 200-40] Directive 'RESOURCE' for core 'ROM_1P_LUTRAM' cannot be applied: Variable 'second_order_float::cos_K0' can not be recognized(UNKNOWN VARIABLE) in 'sincos_approximation'.
-WARNING: [HLS 200-40] Directive 'RESOURCE' for core 'ROM_1P_LUTRAM' cannot be applied: Variable 'fourth_order_double::sin_cos_K4' can not be recognized(UNKNOWN VARIABLE) in 'sin_or_cos_approximation'.
-WARNING: [HLS 200-40] Directive 'RESOURCE' for core 'ROM_1P_LUTRAM' cannot be applied: Variable 'fourth_order_double::cos_K0' can not be recognized(UNKNOWN VARIABLE) in 'sincos_approximation'.
-WARNING: [HLS 200-40] Directive 'RESOURCE' for core 'ROM_1P_LUTRAM' cannot be applied: Variable 'second_order_float::cos_K2' can not be recognized(UNKNOWN VARIABLE) in 'sincos_approximation'.
-WARNING: [HLS 200-40] Directive 'RESOURCE' for core 'ROM_1P_LUTRAM' cannot be applied: Variable 'fourth_order_double::sin_cos_K0' can not be recognized(UNKNOWN VARIABLE) in 'sin_or_cos_approximation'.
-WARNING: [HLS 200-40] Directive 'RESOURCE' for core 'ROM_1P_LUTRAM' cannot be applied: Variable 'fourth_order_double::sin_cos_K2' can not be recognized(UNKNOWN VARIABLE) in 'sin_or_cos_approximation'.
-WARNING: [HLS 200-40] Directive 'RESOURCE' for core 'ROM_1P_LUTRAM' cannot be applied: Variable 'second_order_float::cos_K1' can not be recognized(UNKNOWN VARIABLE) in 'sincos_approximation'.
-WARNING: [HLS 200-40] Directive 'RESOURCE' for core 'ROM_1P_LUTRAM' cannot be applied: Variable 'first_order_fixed_16::sin_cos_K1' can not be recognized(UNKNOWN VARIABLE) in 'sin_or_cos_approximation'.
-WARNING: [HLS 200-40] Directive 'RESOURCE' for core 'ROM_1P_LUTRAM' cannot be applied: Variable 'fourth_order_double::cos_K2' can not be recognized(UNKNOWN VARIABLE) in 'sincos_approximation'.
-INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:27 . Memory (MB): peak = 100.738 ; gain = 43.961
-INFO: [HLS 200-0] Linking Release ...
-Execute       llvm-ld C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/core.bc -hls-opt -except-internalize hand_num_nn -LE:/Vivado/2018.1/win64/lib -lm_basic -lhlsmc++ -lhlsm -o C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/a.o 
-Command       llvm-ld returned 0; 9.494 sec.
-Execute       disassemble C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/a.o C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/a.o 
-Execute         is_encrypted C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/a.o.bc 
-Command         is_encrypted returned 0; 0 sec.
-Command       disassemble returned 0; 0.63 sec.
-INFO: [HLS 200-0] Disassemble time: 0 seconds per iteration
-INFO: [HLS 200-0] Linking Debug ...
-Execute       llvm-ld C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/core.g.bc -hls-opt -except-internalize hand_num_nn -LE:/Vivado/2018.1/win64/lib -lm_basic -lhlsmc++ -lhlsm -o C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/a.g 
-Command       llvm-ld returned 0; 1.524 sec.
-INFO: [HLS 200-0] Disassemble time: 0 seconds per iteration
-INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:38 . Memory (MB): peak = 100.754 ; gain = 43.977
-Execute       ::config_rtl 
-Command       config_rtl returned 0; 0.001 sec.
-Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 -enable_clang39=0 
-Execute         cleanup_all_models 
-Command         cleanup_all_models returned 0; 0 sec.
-INFO: [HLS 200-10] Starting code transformations ...
-Execute         transform -promote-dbg-pointer C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/a.pp.bc -o C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/a.pp.0.bc -f 
-Command         transform returned 0; 0.399 sec.
-Execute         llvm-ld C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/a.pp.0.bc -disable-opt -LE:/Vivado/2018.1/win64/lib -lfloatconversion -o C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/a.g.0 
-Command         llvm-ld returned 0; 0.808 sec.
-INFO: [HLS 200-0] Running Standard Transforms...
-Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top hand_num_nn -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/a.g.0.bc -o C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
-Command         transform returned 0; 0.388 sec.
-Execute         disassemble C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/a.g.1 C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/a.g.1 
-Execute           is_encrypted C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/a.g.1.bc 
-Command           is_encrypted returned 0; 0.008 sec.
-Command         disassemble returned 0; 0.121 sec.
-INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:40 . Memory (MB): peak = 107.367 ; gain = 50.590
-INFO: [HLS 200-10] Checking synthesizability ...
-INFO: [HLS 200-0] Checking Synthesizability 1/2..
-Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/a.g.1.bc -o C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/a.g.2.prechk.bc -f 
-Command         transform returned 0; 0.054 sec.
-INFO: [HLS 200-0] Checking Synthesizability 2/2..
-Execute         transform -syn-check C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/a.g.2.prechk.bc -o C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
-Command         transform returned 0; 0.031 sec.
-INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:02 ; elapsed = 00:00:40 . Memory (MB): peak = 109.008 ; gain = 52.230
-INFO: [HLS 200-0] Compiler optimizing ...
-INFO: [HLS 200-0] Share syncheck's 1.bc for syn flow: copy C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/a.g.1.bc to C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/a.o.1.bc
-INFO: [HLS 200-0] Presyn 1...
-Execute         transform -hls -tmp C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -clib-intrinsic-prepare -dce -func-buffer -dce -array-normalize -func-legal -instcombine -gvn -constprop -dce -ptrArgReplace -mem2reg -instcombine -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -instcombine -dce -global-constprop -deadargelim -mem2reg -instcombine -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -mem-intrinsic-preproc -dce -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -instcombine -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -inst-simplify -dce -norm-name -function-inline -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/a.o.1.bc -o C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/a.o.1.tmp.bc -f 
-Command         transform returned 0; 0.261 sec.
-Execute         disassemble C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/a.o.1.tmp C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/a.o.1.tmp 
-Execute           is_encrypted C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/a.o.1.tmp.bc 
-Command           is_encrypted returned 0; 0.052 sec.
-Command         disassemble returned 0; 0.154 sec.
-INFO: [HLS 200-0] Presyn 2...
-Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/a.o.1.tmp.bc -o C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
-Command         transform returned 0; 0.089 sec.
-Execute         disassemble C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/a.o.2 C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/a.o.2 
-Execute           is_encrypted C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/a.o.2.bc 
-Command           is_encrypted returned 0; 0.009 sec.
-Command         disassemble returned 0; 0.119 sec.
-INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:00:41 . Memory (MB): peak = 132.191 ; gain = 75.414
-INFO: [HLS 200-0] Building ssdm...
-Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -instcombine -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -read-loop-dep -dce -bitwidth -loop-dep -check-stream -norm-name -legalize -validate-dataflow -cdfg-build C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/a.o.2.bc -o C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
-Command         transform returned 0; 0.302 sec.
-Execute         disassemble C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/a.o.3 C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/a.o.3 
-Execute           is_encrypted C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/a.o.3.bc 
-Command           is_encrypted returned 0; 0.049 sec.
-Command         disassemble returned 0; 0.116 sec.
-INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:00:41 . Memory (MB): peak = 132.418 ; gain = 75.641
-INFO: [HLS 200-0] Finish building internal data model.
-Command       opt_and_import_c returned 0; 2.914 sec.
-Command     elaborate returned 0; 39.938 sec.
-Execute     autosyn 
-INFO: [HLS 200-10] Starting hardware synthesis ...
-INFO: [HLS 200-0] Synthesizing C/C++ design ...
-INFO: [HLS 200-10] Synthesizing 'hand_num_nn' ...
-Execute       ap_set_top_model hand_num_nn 
-Command       ap_set_top_model returned 0; 0.001 sec.
-Execute       get_model_list hand_num_nn -filter all-wo-channel -topdown 
-Command       get_model_list returned 0; 0 sec.
-Execute       preproc_iomode -model hand_num_nn 
-Command       preproc_iomode returned 0; 0.001 sec.
-Execute       get_model_list hand_num_nn -filter all-wo-channel 
-Command       get_model_list returned 0; 0 sec.
-INFO: [HLS 200-0] Model list for configure: hand_num_nn
-INFO: [HLS 200-0] Configuring Module : hand_num_nn ...
-Execute       set_default_model hand_num_nn 
-Command       set_default_model returned 0; 0 sec.
-Execute       apply_spec_resource_limit hand_num_nn 
-Command       apply_spec_resource_limit returned 0; 0 sec.
-INFO: [HLS 200-0] Model list for preprocess: hand_num_nn
-INFO: [HLS 200-0] Preprocessing Module: hand_num_nn ...
-Execute       set_default_model hand_num_nn 
-Command       set_default_model returned 0; 0 sec.
-Execute       cdfg_preprocess -model hand_num_nn 
-Command       cdfg_preprocess returned 0; 0.002 sec.
-Execute       rtl_gen_preprocess hand_num_nn 
-Command       rtl_gen_preprocess returned 0; 0 sec.
-INFO: [HLS 200-0] Model list for synthesis: hand_num_nn
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'hand_num_nn'
-INFO: [HLS 200-10] ----------------------------------------------------------------
-Execute       set_default_model hand_num_nn 
-Command       set_default_model returned 0; 0 sec.
-Execute       schedule -model hand_num_nn 
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-11] Finished scheduling.
-Command       schedule returned 0; 0.471 sec.
-INFO: [HLS 200-111]  Elapsed time: 41.75 seconds; current allocated memory: 84.060 MB.
-Execute       report -o C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/hand_num_nn.verbose.sched.rpt -verbose -f 
-Command       report returned 0; 0.252 sec.
-Execute       db_write -o C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/hand_num_nn.sched.adb -f 
-Command       db_write returned 0; 0.063 sec.
-INFO: [HLS 200-0] Finish scheduling hand_num_nn.
-Execute       set_default_model hand_num_nn 
-Command       set_default_model returned 0; 0 sec.
-Execute       bind -model hand_num_nn 
-INFO: [BIND 205-110] clear=
-INFO: [BIND 205-110] debug=
-INFO: [BIND 205-110] drf=
-INFO: [BIND 205-110] effort=
-INFO: [BIND 205-110] fast_refine=
-INFO: [BIND 205-110] fu_weight=[ 0.0 -- 1.0 ]
-INFO: [BIND 205-110] global_opt=
-INFO: [BIND 205-110] gsearch=
-INFO: [BIND 205-110] help=
-INFO: [BIND 205-110] help-hidden=
-INFO: [BIND 205-110] min_mem_port=
-INFO: [BIND 205-110] min_op=
-INFO: [BIND 205-110] minreg=
-INFO: [BIND 205-110] ml=
-INFO: [BIND 205-110] model=hand_num_nn
-INFO: [BIND 205-110] no_false_path=
-INFO: [BIND 205-110] no_min_op=
-INFO: [BIND 205-110] normalize=
-INFO: [BIND 205-110] quiet=
-INFO: [BIND 205-110] refine=
-INFO: [BIND 205-110] reg_weight=[ 0.0 -- 1.0 ]
-INFO: [BIND 205-110] search=
-INFO: [BIND 205-110] tight_delay=
-INFO: [BIND 205-110] verbose=
-INFO: [BIND 205-110] wFF=
-INFO: [BIND 205-110] wFU=
-INFO: [BIND 205-110] wMUX=
-INFO: [BIND 205-110] wNET=
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-Command       bind returned 0; 0.091 sec.
-INFO: [HLS 200-111]  Elapsed time: 0.459 seconds; current allocated memory: 84.870 MB.
-Execute       report -o C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/hand_num_nn.verbose.bind.rpt -verbose -f 
-Command       report returned 0; 0.242 sec.
-Execute       db_write -o C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/hand_num_nn.bind.adb -f 
-Command       db_write returned 0; 0.065 sec.
-INFO: [HLS 200-0] Finish binding hand_num_nn.
-Execute       get_model_list hand_num_nn -filter all-wo-channel 
-Command       get_model_list returned 0; 0 sec.
-INFO: [HLS 200-0] Preprocessing for RTLGen ...
-Execute       rtl_gen_preprocess hand_num_nn 
-Command       rtl_gen_preprocess returned 0; 0.001 sec.
-INFO: [HLS 200-0] Model list for RTL generation: hand_num_nn
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'hand_num_nn'
-INFO: [HLS 200-10] ----------------------------------------------------------------
-Execute       create_rtl_model hand_num_nn -vendor xilinx -mg_file C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/hand_num_nn.compgen.tcl 
-INFO: [RTGEN 206-500] Setting interface mode on port 'hand_num_nn/X' to 'bram'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'hand_num_nn/y' to 's_axilite & ap_none'.
-INFO: [RTGEN 206-500] Setting interface mode on function 'hand_num_nn' to 's_axilite & ap_ctrl_hs'.
-INFO: [SYN 201-210] Renamed object name 'hand_num_nn_theta1h1' to 'hand_num_nn_thetabkb' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'hand_num_nn_theta1b2' to 'hand_num_nn_thetacud' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'hand_num_nn_theta2h3' to 'hand_num_nn_thetadEe' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'hand_num_nn_theta2b4' to 'hand_num_nn_thetaeOg' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'hand_num_nn_theta3h5' to 'hand_num_nn_thetafYi' due to the length limit 20
-INFO: [RTGEN 206-100] Bundling port 'return' to AXI-Lite port CRTL_BUS.
-INFO: [SYN 201-210] Renamed object name 'hand_num_nn_fadd_32ns_32ns_32_5_full_dsp_1' to 'hand_num_nn_fadd_g8j' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'hand_num_nn_fmul_32ns_32ns_32_4_max_dsp_1' to 'hand_num_nn_fmul_hbi' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'hand_num_nn_fptrunc_64ns_32_1_1' to 'hand_num_nn_fptruibs' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'hand_num_nn_fpext_32ns_64_1_1' to 'hand_num_nn_fpextjbC' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'hand_num_nn_fcmp_32ns_32ns_1_1_1' to 'hand_num_nn_fcmp_kbM' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'hand_num_nn_dadd_64ns_64ns_64_6_full_dsp_1' to 'hand_num_nn_dadd_lbW' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'hand_num_nn_ddiv_64ns_64ns_64_31_1' to 'hand_num_nn_ddiv_mb6' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'hand_num_nn_dexp_64ns_64ns_64_18_full_dsp_1' to 'hand_num_nn_dexp_ncg' due to the length limit 20
-WARNING: [RTGEN 206-101] Setting dangling out port 'hand_num_nn/X_WEN_A' to 0.
-WARNING: [RTGEN 206-101] Setting dangling out port 'hand_num_nn/X_Din_A' to 0.
-INFO: [RTGEN 206-100] Generating core module 'hand_num_nn_dadd_lbW': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'hand_num_nn_ddiv_mb6': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'hand_num_nn_dexp_ncg': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'hand_num_nn_fadd_g8j': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'hand_num_nn_fcmp_kbM': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'hand_num_nn_fmul_hbi': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'hand_num_nn_fpextjbC': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'hand_num_nn_fptruibs': 1 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'hand_num_nn'.
-Command       create_rtl_model returned 0; 0.661 sec.
-INFO: [HLS 200-111]  Elapsed time: 1.025 seconds; current allocated memory: 86.570 MB.
-Execute       source C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/hand_num_nn.rtl_wrap.cfg.tcl 
-Command       ap_source returned 0; 0.001 sec.
-Execute       gen_rtl hand_num_nn -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/syn/systemc/hand_num_nn -synmodules hand_num_nn 
-Command       gen_rtl returned 0; 0.049 sec.
-Execute       gen_rtl hand_num_nn -istop -style xilinx -f -lang vhdl -o C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/syn/vhdl/hand_num_nn 
-Command       gen_rtl returned 0; 0.151 sec.
-Execute       gen_rtl hand_num_nn -istop -style xilinx -f -lang vlog -o C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/syn/verilog/hand_num_nn 
-Command       gen_rtl returned 0; 0.102 sec.
-Execute       export_constraint_db -o C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/hand_num_nn.constraint.tcl -f -tool general 
-Command       export_constraint_db returned 0; 0.001 sec.
-Execute       report -model hand_num_nn -o C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/hand_num_nn.design.xml -verbose -f -dv 
-Command       report returned 0; 0.065 sec.
-Execute       report -model hand_num_nn -o C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/hand_num_nn.sdaccel.xml -verbose -f -sdaccel 
-Command       report returned 0; 0.161 sec.
-Execute       gen_tb_info hand_num_nn -o C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/hand_num_nn -p C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db 
-Command       gen_tb_info returned 0; 0.007 sec.
-Execute       report -model hand_num_nn -o C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/syn/report/hand_num_nn_csynth.rpt -f 
-Command       report returned 0; 0.046 sec.
-Execute       report -model hand_num_nn -o C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/syn/report/hand_num_nn_csynth.xml -f -x 
-Command       report returned 0; 0.037 sec.
-Execute       report -model hand_num_nn -o C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/hand_num_nn.verbose.rpt -verbose -f 
-Command       report returned 0; 0.269 sec.
-Execute       db_write -model hand_num_nn -o C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/hand_num_nn.adb -f 
-Command       db_write returned 0; 0.122 sec.
-Execute       sc_get_clocks hand_num_nn 
-Command       sc_get_clocks returned 0; 0 sec.
-Execute       sc_get_portdomain hand_num_nn 
-Command       sc_get_portdomain returned 0; 0 sec.
-INFO: [HLS 200-0] Model list for RTL component generation: hand_num_nn
-INFO: [HLS 200-0] Handling components in module [hand_num_nn] ... 
-Execute       source C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/hand_num_nn.compgen.tcl 
-INFO: [HLS 200-0] Found component hand_num_nn_fadd_g8j.
-INFO: [HLS 200-0] Append model hand_num_nn_fadd_g8j
-INFO: [HLS 200-0] Found component hand_num_nn_fmul_hbi.
-INFO: [HLS 200-0] Append model hand_num_nn_fmul_hbi
-INFO: [HLS 200-0] Found component hand_num_nn_fptruibs.
-INFO: [HLS 200-0] Append model hand_num_nn_fptruibs
-INFO: [HLS 200-0] Found component hand_num_nn_fpextjbC.
-INFO: [HLS 200-0] Append model hand_num_nn_fpextjbC
-INFO: [HLS 200-0] Found component hand_num_nn_fcmp_kbM.
-INFO: [HLS 200-0] Append model hand_num_nn_fcmp_kbM
-INFO: [HLS 200-0] Found component hand_num_nn_dadd_lbW.
-INFO: [HLS 200-0] Append model hand_num_nn_dadd_lbW
-INFO: [HLS 200-0] Found component hand_num_nn_ddiv_mb6.
-INFO: [HLS 200-0] Append model hand_num_nn_ddiv_mb6
-INFO: [HLS 200-0] Found component hand_num_nn_dexp_ncg.
-INFO: [HLS 200-0] Append model hand_num_nn_dexp_ncg
-INFO: [HLS 200-0] Found component hand_num_nn_thetabkb.
-INFO: [HLS 200-0] Append model hand_num_nn_thetabkb
-INFO: [HLS 200-0] Found component hand_num_nn_thetacud.
-INFO: [HLS 200-0] Append model hand_num_nn_thetacud
-INFO: [HLS 200-0] Found component hand_num_nn_thetadEe.
-INFO: [HLS 200-0] Append model hand_num_nn_thetadEe
-INFO: [HLS 200-0] Found component hand_num_nn_thetaeOg.
-INFO: [HLS 200-0] Append model hand_num_nn_thetaeOg
-INFO: [HLS 200-0] Found component hand_num_nn_thetafYi.
-INFO: [HLS 200-0] Append model hand_num_nn_thetafYi
-INFO: [HLS 200-0] Found component hand_num_nn_h1.
-INFO: [HLS 200-0] Append model hand_num_nn_h1
-INFO: [HLS 200-0] Found component hand_num_nn_h2.
-INFO: [HLS 200-0] Append model hand_num_nn_h2
-INFO: [HLS 200-0] Found component hand_num_nn_CRTL_BUS_s_axi.
-INFO: [HLS 200-0] Append model hand_num_nn_CRTL_BUS_s_axi
-Command       ap_source returned 0; 0.006 sec.
-INFO: [HLS 200-0] Append model hand_num_nn
-INFO: [HLS 200-0] Generating RTL model list ...
-INFO: [HLS 200-0] All models in this session: hand_num_nn_fadd_g8j hand_num_nn_fmul_hbi hand_num_nn_fptruibs hand_num_nn_fpextjbC hand_num_nn_fcmp_kbM hand_num_nn_dadd_lbW hand_num_nn_ddiv_mb6 hand_num_nn_dexp_ncg hand_num_nn_thetabkb hand_num_nn_thetacud hand_num_nn_thetadEe hand_num_nn_thetaeOg hand_num_nn_thetafYi hand_num_nn_h1 hand_num_nn_h2 hand_num_nn_CRTL_BUS_s_axi hand_num_nn
-INFO: [HLS 200-0] To file: write model hand_num_nn_fadd_g8j
-INFO: [HLS 200-0] To file: write model hand_num_nn_fmul_hbi
-INFO: [HLS 200-0] To file: write model hand_num_nn_fptruibs
-INFO: [HLS 200-0] To file: write model hand_num_nn_fpextjbC
-INFO: [HLS 200-0] To file: write model hand_num_nn_fcmp_kbM
-INFO: [HLS 200-0] To file: write model hand_num_nn_dadd_lbW
-INFO: [HLS 200-0] To file: write model hand_num_nn_ddiv_mb6
-INFO: [HLS 200-0] To file: write model hand_num_nn_dexp_ncg
-INFO: [HLS 200-0] To file: write model hand_num_nn_thetabkb
-INFO: [HLS 200-0] To file: write model hand_num_nn_thetacud
-INFO: [HLS 200-0] To file: write model hand_num_nn_thetadEe
-INFO: [HLS 200-0] To file: write model hand_num_nn_thetaeOg
-INFO: [HLS 200-0] To file: write model hand_num_nn_thetafYi
-INFO: [HLS 200-0] To file: write model hand_num_nn_h1
-INFO: [HLS 200-0] To file: write model hand_num_nn_h2
-INFO: [HLS 200-0] To file: write model hand_num_nn_CRTL_BUS_s_axi
-INFO: [HLS 200-0] To file: write model hand_num_nn
-INFO: [HLS 200-0] Finished generating RTL model list.
-
-
-INFO: [HLS 200-0] RTL Generation done.
-INFO: [HLS 200-0] CAS Generation done.
-INFO: [HLS 200-0] CBC Generation done.
-Execute       export_ssdm C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/a.export.ll 
-Command       export_ssdm returned 0; 0.007 sec.
-Execute       source C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/global.setting.tcl 
-Command       ap_source returned 0; 0.003 sec.
-Execute       source E:/Vivado/2018.1/common/technology/generic/autopilot/common.gen 
-Execute         source E:/Vivado/2018.1/common/technology/generic/autopilot/APCoreGen.gen 
-Command         ap_source returned 0; 0.029 sec.
-Command       ap_source returned 0; 0.072 sec.
-Execute       source E:/Vivado/2018.1/common/technology/generic/autopilot/op.gen 
-Command       ap_source returned 0; 0.039 sec.
-Execute       source E:/Vivado/2018.1/common/technology/generic/autopilot/op_simcore.gen 
-Command       ap_source returned 0; 0.048 sec.
-Execute       source E:/Vivado/2018.1/common/technology/generic/autopilot/interface.gen 
-Command       ap_source returned 0; 0.037 sec.
-Execute       source C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/global.setting.tcl 
-Command       ap_source returned 0; 0.002 sec.
-Execute       source E:/Vivado/2018.1/common/technology/xilinx/aartix7/aartix7.gen 
-Execute         source E:/Vivado/2018.1/common/technology/xilinx/common/virtex.gen 
-Execute           source E:/Vivado/2018.1/common/technology/xilinx/common/xilinx.gen 
-Execute             source E:/Vivado/2018.1/common/technology/xilinx/interface/plb46.gen 
-Command             ap_source returned 0; 0.003 sec.
-Execute             source E:/Vivado/2018.1/common/technology/xilinx/interface/fsl.gen 
-Command             ap_source returned 0; 0.001 sec.
-Execute             source E:/Vivado/2018.1/common/technology/xilinx/interface/axi4.gen 
-Command             ap_source returned 0; 0.006 sec.
-Execute             source E:/Vivado/2018.1/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute               source E:/Vivado/2018.1/common/technology/xilinx/interface/saxilite.gen 
-Command               ap_source returned 0; 0.009 sec.
-Execute               source E:/Vivado/2018.1/common/technology/xilinx/interface/maxi.gen 
-Command               ap_source returned 0; 0.018 sec.
-Command             ap_source returned 0; 0.027 sec.
-Execute             source E:/Vivado/2018.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Command             ap_source returned 0; 0.017 sec.
-Execute             source E:/Vivado/2018.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Command             ap_source returned 0; 0.012 sec.
-Execute             source E:/Vivado/2018.1/common/technology/xilinx/ip/dds_compiler.gen 
-Command             ap_source returned 0; 0.005 sec.
-Execute             source E:/Vivado/2018.1/common/technology/xilinx/ip/util.gen 
-Command             ap_source returned 0; 0 sec.
-Execute             source E:/Vivado/2018.1/common/technology/xilinx/ip/xfft.gen 
-Command             ap_source returned 0; 0.137 sec.
-Execute             source E:/Vivado/2018.1/common/technology/xilinx/ip/xfir.gen 
-Command             ap_source returned 0; 0.001 sec.
-Command           ap_source returned 0; 0.211 sec.
-Execute           source E:/Vivado/2018.1/common/technology/xilinx/common/dsp48.gen 
-Command           ap_source returned 0; 0 sec.
-Command         ap_source returned 0; 0.217 sec.
-Command       ap_source returned 0; 0.217 sec.
-Execute       source E:/Vivado/2018.1/common/technology/xilinx/aartix7/aartix7_fpv6.gen 
-Execute         source E:/Vivado/2018.1/common/technology/xilinx/common/xilinx_fpv6.gen 
-Command         ap_source returned 0; 0.003 sec.
-Command       ap_source returned 0; 0.003 sec.
-Execute       source C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/global.setting.tcl 
-Command       ap_source returned 0; 0.002 sec.
-Execute       source C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/global.setting.tcl 
-Command       ap_source returned 0; 0.002 sec.
-Execute       source C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/global.setting.tcl 
-Command       ap_source returned 0; 0.039 sec.
-Execute       source C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/hand_num_nn.compgen.tcl 
-INFO: [RTMG 210-279] Implementing memory 'hand_num_nn_thetabkb_rom' using auto ROMs.
-INFO: [RTMG 210-279] Implementing memory 'hand_num_nn_thetacud_rom' using distributed ROMs.
-INFO: [RTMG 210-279] Implementing memory 'hand_num_nn_thetadEe_rom' using auto ROMs.
-INFO: [RTMG 210-279] Implementing memory 'hand_num_nn_thetaeOg_rom' using distributed ROMs.
-INFO: [RTMG 210-279] Implementing memory 'hand_num_nn_thetafYi_rom' using distributed ROMs.
-INFO: [RTMG 210-278] Implementing memory 'hand_num_nn_h1_ram (RAM)' using distributed RAMs.
-INFO: [RTMG 210-278] Implementing memory 'hand_num_nn_h2_ram (RAM)' using distributed RAMs.
-Execute         source ./CRTL_BUS.slave.tcl 
-Command         ap_source returned 0; 0.002 sec.
-Command       ap_source returned 0; 1.417 sec.
-Execute       source C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/global.setting.tcl 
-Command       ap_source returned 0; 0.001 sec.
-Execute       source E:/Vivado/2018.1/common/technology/generic/autopilot/common.gen 
-Execute         source E:/Vivado/2018.1/common/technology/generic/autopilot/APCoreGen.gen 
-Command         ap_source returned 0; 0.002 sec.
-Command       ap_source returned 0; 0.003 sec.
-Execute       source E:/Vivado/2018.1/common/technology/generic/autopilot/op.gen 
-Command       ap_source returned 0; 0.001 sec.
-Execute       source E:/Vivado/2018.1/common/technology/generic/autopilot/op_simcore.gen 
-Command       ap_source returned 0; 0.002 sec.
-Execute       source E:/Vivado/2018.1/common/technology/generic/autopilot/interface.gen 
-Command       ap_source returned 0; 0 sec.
-Execute       source C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/global.setting.tcl 
-Command       ap_source returned 0; 0.002 sec.
-Execute       source E:/Vivado/2018.1/common/technology/xilinx/aartix7/aartix7.gen 
-Execute         source E:/Vivado/2018.1/common/technology/xilinx/common/virtex.gen 
-Execute           source E:/Vivado/2018.1/common/technology/xilinx/common/xilinx.gen 
-Execute             source E:/Vivado/2018.1/common/technology/xilinx/interface/plb46.gen 
-Command             ap_source returned 0; 0.002 sec.
-Execute             source E:/Vivado/2018.1/common/technology/xilinx/interface/fsl.gen 
-Command             ap_source returned 0; 0.001 sec.
-Execute             source E:/Vivado/2018.1/common/technology/xilinx/interface/axi4.gen 
-Command             ap_source returned 0; 0.004 sec.
-Execute             source E:/Vivado/2018.1/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute               source E:/Vivado/2018.1/common/technology/xilinx/interface/saxilite.gen 
-Command               ap_source returned 0; 0.007 sec.
-Execute               source E:/Vivado/2018.1/common/technology/xilinx/interface/maxi.gen 
-Command               ap_source returned 0; 0.014 sec.
-Command             ap_source returned 0; 0.021 sec.
-Execute             source E:/Vivado/2018.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Command             ap_source returned 0; 0.02 sec.
-Execute             source E:/Vivado/2018.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Command             ap_source returned 0; 0.011 sec.
-Execute             source E:/Vivado/2018.1/common/technology/xilinx/ip/dds_compiler.gen 
-Command             ap_source returned 0; 0.004 sec.
-Execute             source E:/Vivado/2018.1/common/technology/xilinx/ip/util.gen 
-Command             ap_source returned 0; 0.001 sec.
-Execute             source E:/Vivado/2018.1/common/technology/xilinx/ip/xfft.gen 
-Command             ap_source returned 0; 0.146 sec.
-Execute             source E:/Vivado/2018.1/common/technology/xilinx/ip/xfir.gen 
-Command             ap_source returned 0; 0.002 sec.
-Command           ap_source returned 0; 0.213 sec.
-Execute           source E:/Vivado/2018.1/common/technology/xilinx/common/dsp48.gen 
-Command           ap_source returned 0; 0.001 sec.
-Command         ap_source returned 0; 0.217 sec.
-Command       ap_source returned 0; 0.219 sec.
-Execute       source E:/Vivado/2018.1/common/technology/xilinx/aartix7/aartix7_fpv6.gen 
-Execute         source E:/Vivado/2018.1/common/technology/xilinx/common/xilinx_fpv6.gen 
-Command         ap_source returned 0; 0.004 sec.
-Command       ap_source returned 0; 0.004 sec.
-Execute       source C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/hand_num_nn.rtl_wrap.cfg.tcl 
-Command       ap_source returned 0; 0.002 sec.
-Execute       source C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/hand_num_nn.rtl_wrap.cfg.tcl 
-Command       ap_source returned 0; 0.002 sec.
-Execute       source C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/hand_num_nn.rtl_wrap.cfg.tcl 
-Command       ap_source returned 0; 0.001 sec.
-Execute       source C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/hand_num_nn.tbgen.tcl 
-Command       ap_source returned 0; 0.001 sec.
-Execute       source C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/hand_num_nn.tbgen.tcl 
-Command       ap_source returned 0; 0.001 sec.
-Execute       source C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/global.setting.tcl 
-Command       ap_source returned 0; 0.001 sec.
-Execute       source C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/hand_num_nn.compgen.tcl 
-Command       ap_source returned 0; 0.294 sec.
-Execute       source C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/global.setting.tcl 
-Command       ap_source returned 0; 0.001 sec.
-Execute       source C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/hand_num_nn.compgen.tcl 
-Command       ap_source returned 0; 0.015 sec.
-Execute       source C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/global.setting.tcl 
-Command       ap_source returned 0; 0.001 sec.
-Execute       source C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/hand_num_nn.compgen.tcl 
-Command       ap_source returned 0; 0.01 sec.
-Execute       source C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/global.setting.tcl 
-Command       ap_source returned 0; 0.001 sec.
-Execute       source C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/hand_num_nn.constraint.tcl 
-Command       ap_source returned 0; 0.002 sec.
-Execute       source C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/hand_num_nn.tbgen.tcl 
-Command       ap_source returned 0; 0.002 sec.
-Execute       source C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/global.setting.tcl 
-Command       ap_source returned 0; 0.002 sec.
-Execute       source C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/global.setting.tcl 
-Command       ap_source returned 0; 0.001 sec.
-Execute       source C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/global.setting.tcl 
-Command       ap_source returned 0; 0.001 sec.
-Execute       source C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/hand_num_nn.tbgen.tcl 
-Command       ap_source returned 0; 0.001 sec.
-Execute       source C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/hand_num_nn.tbgen.tcl 
-Command       ap_source returned 0; 0.001 sec.
-Execute       source C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/global.setting.tcl 
-Command       ap_source returned 0; 0.002 sec.
-Execute       source C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/hand_num_nn.constraint.tcl 
-Command       ap_source returned 0; 0.002 sec.
-Execute       sc_get_clocks hand_num_nn 
-Command       sc_get_clocks returned 0; 0 sec.
-Execute       source C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/.autopilot/db/global.setting.tcl 
-Command       ap_source returned 0; 0.001 sec.
-Execute       source C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/impl/misc/hand_num_nn_ap_dadd_4_full_dsp_64_ip.tcl 
-Command       ap_source returned 0; 0.005 sec.
-Execute       source C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/impl/misc/hand_num_nn_ap_ddiv_29_no_dsp_64_ip.tcl 
-Command       ap_source returned 0; 0.003 sec.
-Execute       source C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/impl/misc/hand_num_nn_ap_dexp_16_full_dsp_64_ip.tcl 
-Command       ap_source returned 0; 0.004 sec.
-Execute       source C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/impl/misc/hand_num_nn_ap_fadd_3_full_dsp_32_ip.tcl 
-Command       ap_source returned 0; 0.014 sec.
-Execute       source C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/impl/misc/hand_num_nn_ap_fcmp_0_no_dsp_32_ip.tcl 
-Command       ap_source returned 0; 0.004 sec.
-Execute       source C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/impl/misc/hand_num_nn_ap_fmul_2_max_dsp_32_ip.tcl 
-Command       ap_source returned 0; 0.004 sec.
-Execute       source C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/impl/misc/hand_num_nn_ap_fpext_0_no_dsp_32_ip.tcl 
-Command       ap_source returned 0; 0.012 sec.
-Execute       source C:/Users/Raunaq/Desktop/CADVLSI/CADVLSI/solution1/impl/misc/hand_num_nn_ap_fptrunc_0_no_dsp_64_ip.tcl 
-Command       ap_source returned 0; 0.005 sec.
-INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:04 ; elapsed = 00:00:50 . Memory (MB): peak = 139.719 ; gain = 82.941
-INFO: [SYSC 207-301] Generating SystemC RTL for hand_num_nn.
-INFO: [VHDL 208-304] Generating VHDL RTL for hand_num_nn.
-INFO: [VLOG 209-307] Generating Verilog RTL for hand_num_nn.
-Command     autosyn returned 0; 9.267 sec.
-Command   csynth_design returned 0; 49.209 sec.
-Command ap_source returned 0; 49.846 sec.
+Execute     source run_sim.tcl 
+Command     ap_source returned 0; 0.563 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design returned 0; 11.489 sec.
+Command ap_source returned 0; 12.855 sec.
 Execute cleanup_all 
-Command cleanup_all returned 0; 0.006 sec.
+Command cleanup_all returned 0; 0.031 sec.

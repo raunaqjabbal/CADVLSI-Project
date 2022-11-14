@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="core.cpp" path="C:\Users\Raunaq\Desktop\CADVLSI\core.cpp"/>
+    <originFiles name="core.cpp" path="C:\Users\Raunaq\Desktop\CADVLSI-Project\core.cpp"/>
   </source>
   <testbench>
-    <originFiles name="test_hand_nn.cpp" path="C:\Users\Raunaq\Desktop\CADVLSI\test_hand_nn.cpp"/>
+    <originFiles name="test_hand_nn.cpp" path="C:\Users\Raunaq\Desktop\CADVLSI-Project\test_hand_nn.cpp"/>
   </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>
