@@ -32,26 +32,20 @@ def C():
     # y_pred2=np.array(y_pred>0.5,dtype="int")
     # y_pred2=y_pred2.flatten()
     
-    # #model.summary()
     model = create_model()
     model.load_weights('./checkpoints/my_checkpoint')
+    
     y_pred=model.predict(X_test)
     y_pred2=np.array(y_pred>0.5,dtype="int")
     y_pred2=y_pred2.flatten()
+    model.summary()
     
     # print("Layer 1 Weights",model.layers[0].weights[0])
     # print("Layer 1 Bias",model.layers[0].weights[1])
-    print("Layer 2 Weights\n",pd.DataFrame(model.layers[1].weights[0]))
-    print("Layer 2 Bias",model.layers[1].weights[1])
+    # print("Layer 2 Weights\n",pd.DataFrame(model.layers[1].weights[0]))
+    # print("Layer 2 Bias",model.layers[1].weights[1])
     # print("Layer 3 Weights",model.layers[2].weights[0])
-    # print("Layer 3 Bias",model.layers[2].weights[1])       
-    
-    # print(model.layers[0].weights[0])
-    # print(model.layers[0].weights[1])
-    # print(model.layers[1].weights[0])
-    # print(model.layers[1].weights[1])
-    # print(model.layers[2].weights[0])
-    # print(model.layers[2].weights[1])        
+    # print("Layer 3 Bias",model.layers[2].weights[1])           
     
     print("y_pred:",y_pred[0]) #[0.96707326]
     print("X_Test: ",X_test[0]) # [1.3538  1.2087  1.0842  1.1102  1.326   0.90461 0.87229]

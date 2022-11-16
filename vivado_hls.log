@@ -1,5 +1,5 @@
 INFO: [HLS 200-10] Running 'E:/Vivado/2018.1/bin/unwrapped/win64.o/vivado_hls.exe'
-INFO: [HLS 200-10] For user 'R' on host 'raunaq' (Windows NT_amd64 version 6.2) on Sun Nov 13 21:33:32 +0530 2022
+INFO: [HLS 200-10] For user 'R' on host 'raunaq' (Windows NT_amd64 version 6.2) on Tue Nov 15 10:36:20 +0530 2022
 INFO: [HLS 200-10] In directory 'C:/Users/Raunaq/Desktop/CADVLSI-Project'
 INFO: [HLS 200-10] Opening project 'C:/Users/Raunaq/Desktop/CADVLSI-Project/CADVLSI'.
 INFO: [HLS 200-10] Opening solution 'C:/Users/Raunaq/Desktop/CADVLSI-Project/CADVLSI/solution1'.
@@ -7,15 +7,6 @@ INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 INFO: [HLS 200-10] Setting target device to 'xa7a12tcsg325-1q'
 INFO: [SIM 211-2] *************** CSIM start ***************
 INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
-   Compiling ../../../../test_hand_nn.cpp in debug mode
-   Compiling ../../../../core.cpp in debug mode
-   Generating csim.exe
-In file included from E:/Vivado/2018.1/include/floating_point_v6_1_bitacc_cmodel.h:143:0,
-                 from E:/Vivado/2018.1/include/hls_fpo.h:167,
-                 from E:/Vivado/2018.1/include/hls_half.h:57,
-                 from E:/Vivado/2018.1/include/hls_math.h:35,
-                 from ../../../../core.cpp:2:
-E:/Vivado/2018.1/include/gmp.h:62:0: warning: "__GMP_LIBGMP_DLL" redefined [enabled by default]
-E:/Vivado/2018.1/include/floating_point_v6_1_bitacc_cmodel.h:135:0: note: this is the location of the previous definition
+make: `csim.exe' is up to date.
 number recognized: 0.947279INFO: [SIM 211-1] CSim done with 0 errors.
 INFO: [SIM 211-3] *************** CSIM finish ***************
